@@ -1,0 +1,3829 @@
+{
+  "artifact_type": "experiment_index_not_canonical",
+  "generated_from": [
+    "Contents/MonoBundle/.xamarin/maccatalyst-x64/RC600 Editor.dll",
+    "Contents/Resources/RC600ParameterHelp.json"
+  ],
+  "canonical_source_status": {
+    "official_docs": "not found in workspace (not evaluated)",
+    "uploaded_rc0_xml": "not found in workspace (not evaluated)",
+    "repo_schema_frontmatter": "not found in workspace (not evaluated)",
+    "style_refs": "not applicable for extraction"
+  },
+  "rows": [
+    {
+      "category": "TRACK",
+      "section_name": "Track 1",
+      "field_group_label": "Loop",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 (Left)",
+        "Inst 1 (Right)",
+        "Inst 2 (Left)",
+        "Inst 2 (Right)",
+        "Mic 1",
+        "Mic 2",
+        "Rhythm",
+        "TRACK1"
+      ],
+      "copy_paste_scope": "track:section",
+      "field_entries": [
+        {
+          "label": "Reverse",
+          "value_def": "Switch"
+        },
+        {
+          "label": "1 Shot",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Pan",
+          "value_def": "Pan"
+        },
+        {
+          "label": "Play Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Start Mode",
+          "value_def": "StartMode"
+        },
+        {
+          "label": "Stop Mode",
+          "value_def": "StopMode"
+        },
+        {
+          "label": "Dub Mode",
+          "value_def": "DubMode"
+        },
+        {
+          "label": "Fx",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Play Mode",
+          "value_def": "PlayMode"
+        },
+        {
+          "label": "Measure",
+          "value_def": "Measure"
+        },
+        {
+          "label": "investigating!!!!",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Loop Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync Mode",
+          "value_def": "TempoSyncMode"
+        },
+        {
+          "label": "Tempo Sync Speed",
+          "value_def": "TempoSyncSpeed"
+        },
+        {
+          "label": "Bounce In",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 (Left)",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 (Right)",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 (Left)",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 (Right)",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Measure Fallback",
+          "value_def": "Default"
+        },
+        {
+          "label": "WAV Recorded",
+          "value_def": "YesNo"
+        },
+        {
+          "label": "Loop Sync Mode",
+          "value_def": "LoopSyncMode"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track 2",
+      "field_group_label": "Loop",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 (Left)",
+        "Inst 1 (Right)",
+        "Inst 2 (Left)",
+        "Inst 2 (Right)",
+        "Mic 1",
+        "Mic 2",
+        "Rhythm",
+        "TRACK2"
+      ],
+      "copy_paste_scope": "track:section",
+      "field_entries": [
+        {
+          "label": "Reverse",
+          "value_def": "Switch"
+        },
+        {
+          "label": "1 Shot",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Pan",
+          "value_def": "Pan"
+        },
+        {
+          "label": "Play Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Start Mode",
+          "value_def": "StartMode"
+        },
+        {
+          "label": "Stop Mode",
+          "value_def": "StopMode"
+        },
+        {
+          "label": "Dub Mode",
+          "value_def": "DubMode"
+        },
+        {
+          "label": "Fx",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Play Mode",
+          "value_def": "PlayMode"
+        },
+        {
+          "label": "Measure",
+          "value_def": "Measure"
+        },
+        {
+          "label": "investigating!!!!",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Loop Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync Mode",
+          "value_def": "TempoSyncMode"
+        },
+        {
+          "label": "Tempo Sync Speed",
+          "value_def": "TempoSyncSpeed"
+        },
+        {
+          "label": "Bounce In",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 (Left)",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 (Right)",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 (Left)",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 (Right)",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Measure Fallback",
+          "value_def": "Default"
+        },
+        {
+          "label": "WAV Recorded",
+          "value_def": "YesNo"
+        },
+        {
+          "label": "Loop Sync Mode",
+          "value_def": "LoopSyncMode"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track 3",
+      "field_group_label": "Loop",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 (Left)",
+        "Inst 1 (Right)",
+        "Inst 2 (Left)",
+        "Inst 2 (Right)",
+        "Mic 1",
+        "Mic 2",
+        "Rhythm",
+        "TRACK3"
+      ],
+      "copy_paste_scope": "track:section",
+      "field_entries": [
+        {
+          "label": "Reverse",
+          "value_def": "Switch"
+        },
+        {
+          "label": "1 Shot",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Pan",
+          "value_def": "Pan"
+        },
+        {
+          "label": "Play Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Start Mode",
+          "value_def": "StartMode"
+        },
+        {
+          "label": "Stop Mode",
+          "value_def": "StopMode"
+        },
+        {
+          "label": "Dub Mode",
+          "value_def": "DubMode"
+        },
+        {
+          "label": "Fx",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Play Mode",
+          "value_def": "PlayMode"
+        },
+        {
+          "label": "Measure",
+          "value_def": "Measure"
+        },
+        {
+          "label": "investigating!!!!",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Loop Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync Mode",
+          "value_def": "TempoSyncMode"
+        },
+        {
+          "label": "Tempo Sync Speed",
+          "value_def": "TempoSyncSpeed"
+        },
+        {
+          "label": "Bounce In",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 (Left)",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 (Right)",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 (Left)",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 (Right)",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Measure Fallback",
+          "value_def": "Default"
+        },
+        {
+          "label": "WAV Recorded",
+          "value_def": "YesNo"
+        },
+        {
+          "label": "Loop Sync Mode",
+          "value_def": "LoopSyncMode"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track 4",
+      "field_group_label": "Loop",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 (Left)",
+        "Inst 1 (Right)",
+        "Inst 2 (Left)",
+        "Inst 2 (Right)",
+        "Mic 1",
+        "Mic 2",
+        "Rhythm",
+        "TRACK4"
+      ],
+      "copy_paste_scope": "track:section",
+      "field_entries": [
+        {
+          "label": "Reverse",
+          "value_def": "Switch"
+        },
+        {
+          "label": "1 Shot",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Pan",
+          "value_def": "Pan"
+        },
+        {
+          "label": "Play Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Start Mode",
+          "value_def": "StartMode"
+        },
+        {
+          "label": "Stop Mode",
+          "value_def": "StopMode"
+        },
+        {
+          "label": "Dub Mode",
+          "value_def": "DubMode"
+        },
+        {
+          "label": "Fx",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Play Mode",
+          "value_def": "PlayMode"
+        },
+        {
+          "label": "Measure",
+          "value_def": "Measure"
+        },
+        {
+          "label": "investigating!!!!",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Loop Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync Mode",
+          "value_def": "TempoSyncMode"
+        },
+        {
+          "label": "Tempo Sync Speed",
+          "value_def": "TempoSyncSpeed"
+        },
+        {
+          "label": "Bounce In",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 (Left)",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 (Right)",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 (Left)",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 (Right)",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Measure Fallback",
+          "value_def": "Default"
+        },
+        {
+          "label": "WAV Recorded",
+          "value_def": "YesNo"
+        },
+        {
+          "label": "Loop Sync Mode",
+          "value_def": "LoopSyncMode"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track 5",
+      "field_group_label": "Loop",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 (Left)",
+        "Inst 1 (Right)",
+        "Inst 2 (Left)",
+        "Inst 2 (Right)",
+        "Mic 1",
+        "Mic 2",
+        "Rhythm",
+        "TRACK5"
+      ],
+      "copy_paste_scope": "track:section",
+      "field_entries": [
+        {
+          "label": "Reverse",
+          "value_def": "Switch"
+        },
+        {
+          "label": "1 Shot",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Pan",
+          "value_def": "Pan"
+        },
+        {
+          "label": "Play Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Start Mode",
+          "value_def": "StartMode"
+        },
+        {
+          "label": "Stop Mode",
+          "value_def": "StopMode"
+        },
+        {
+          "label": "Dub Mode",
+          "value_def": "DubMode"
+        },
+        {
+          "label": "Fx",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Play Mode",
+          "value_def": "PlayMode"
+        },
+        {
+          "label": "Measure",
+          "value_def": "Measure"
+        },
+        {
+          "label": "investigating!!!!",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Loop Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync Mode",
+          "value_def": "TempoSyncMode"
+        },
+        {
+          "label": "Tempo Sync Speed",
+          "value_def": "TempoSyncSpeed"
+        },
+        {
+          "label": "Bounce In",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 (Left)",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 (Right)",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 (Left)",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 (Right)",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Measure Fallback",
+          "value_def": "Default"
+        },
+        {
+          "label": "WAV Recorded",
+          "value_def": "YesNo"
+        },
+        {
+          "label": "Loop Sync Mode",
+          "value_def": "LoopSyncMode"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track 6",
+      "field_group_label": "Loop",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 (Left)",
+        "Inst 1 (Right)",
+        "Inst 2 (Left)",
+        "Inst 2 (Right)",
+        "Mic 1",
+        "Mic 2",
+        "Rhythm",
+        "TRACK6"
+      ],
+      "copy_paste_scope": "track:section",
+      "field_entries": [
+        {
+          "label": "Reverse",
+          "value_def": "Switch"
+        },
+        {
+          "label": "1 Shot",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Pan",
+          "value_def": "Pan"
+        },
+        {
+          "label": "Play Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Start Mode",
+          "value_def": "StartMode"
+        },
+        {
+          "label": "Stop Mode",
+          "value_def": "StopMode"
+        },
+        {
+          "label": "Dub Mode",
+          "value_def": "DubMode"
+        },
+        {
+          "label": "Fx",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Play Mode",
+          "value_def": "PlayMode"
+        },
+        {
+          "label": "Measure",
+          "value_def": "Measure"
+        },
+        {
+          "label": "investigating!!!!",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Loop Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Tempo Sync Mode",
+          "value_def": "TempoSyncMode"
+        },
+        {
+          "label": "Tempo Sync Speed",
+          "value_def": "TempoSyncSpeed"
+        },
+        {
+          "label": "Bounce In",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 (Left)",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 (Right)",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 (Left)",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 (Right)",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Measure Fallback",
+          "value_def": "Default"
+        },
+        {
+          "label": "WAV Recorded",
+          "value_def": "YesNo"
+        },
+        {
+          "label": "Loop Sync Mode",
+          "value_def": "LoopSyncMode"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK1_FX",
+      "field_group_label": "ICTL1_TRACK1_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK1_TRACK",
+      "field_group_label": "ICTL1_TRACK1_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK2_FX",
+      "field_group_label": "ICTL1_TRACK2_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK2_TRACK",
+      "field_group_label": "ICTL1_TRACK2_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK3_FX",
+      "field_group_label": "ICTL1_TRACK3_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK3_TRACK",
+      "field_group_label": "ICTL1_TRACK3_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK4_FX",
+      "field_group_label": "ICTL1_TRACK4_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK4_TRACK",
+      "field_group_label": "ICTL1_TRACK4_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK5_FX",
+      "field_group_label": "ICTL1_TRACK5_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL1_TRACK5_TRACK",
+      "field_group_label": "ICTL1_TRACK5_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK1_FX",
+      "field_group_label": "ICTL2_TRACK1_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK1_TRACK",
+      "field_group_label": "ICTL2_TRACK1_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK2_FX",
+      "field_group_label": "ICTL2_TRACK2_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK2_TRACK",
+      "field_group_label": "ICTL2_TRACK2_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK3_FX",
+      "field_group_label": "ICTL2_TRACK3_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK3_TRACK",
+      "field_group_label": "ICTL2_TRACK3_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK4_FX",
+      "field_group_label": "ICTL2_TRACK4_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK4_TRACK",
+      "field_group_label": "ICTL2_TRACK4_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK5_FX",
+      "field_group_label": "ICTL2_TRACK5_FX",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "ICTL2_TRACK5_TRACK",
+      "field_group_label": "ICTL2_TRACK5_TRACK",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "B (Unknown)",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 1",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 2",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 3",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 4",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 5",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 6",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 7",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 8",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 1",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 9",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 1",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 2",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 3",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 4",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 5",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 6",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 7",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 8",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 2",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 9",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 1",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 2",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 3",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 4",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 5",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 6",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 7",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 8",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Pedals: Mode 3",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Pedal 9",
+          "value_def": "PedalFunc"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Ext Ctrl",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "External Ctrl 1",
+          "value_def": "CtrlFunc"
+        },
+        {
+          "label": "B (ignore used by RC-505mk2)",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Ext Ctrl",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "External Ctrl 2",
+          "value_def": "CtrlFunc"
+        },
+        {
+          "label": "B (ignore used by RC-505mk2)",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Ext Ctrl",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "External Ctrl 3",
+          "value_def": "CtrlFunc"
+        },
+        {
+          "label": "B (ignore used by RC-505mk2)",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Ext Ctrl",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "External Ctrl 4",
+          "value_def": "CtrlFunc"
+        },
+        {
+          "label": "B (ignore used by RC-505mk2)",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Ext Ctrl",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Expression 1",
+          "value_def": "ExpFunc"
+        },
+        {
+          "label": "B (ignore used by RC-505mk2)",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "CTL FUNC",
+      "section_name": "Ext Ctrl",
+      "field_group_label": "Ctl Func",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Expression 2",
+          "value_def": "ExpFunc"
+        },
+        {
+          "label": "B (ignore used by RC-505mk2)",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Min",
+          "value_def": "Default"
+        },
+        {
+          "label": "      Max",
+          "value_def": "Default"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 1",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 2",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 3",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 4",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 5",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 6",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 7",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 8",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 9",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 10",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 11",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 12",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 13",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 14",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 15",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ASSIGN",
+      "section_name": "Assign 16",
+      "field_group_label": "Assigns",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": "assign:section",
+      "field_entries": [
+        {
+          "label": "Switch",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Action.Source",
+          "value_def": "AssignActionSource"
+        },
+        {
+          "label": "Mode",
+          "value_def": "ToggleMode"
+        },
+        {
+          "label": "Act.Low",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Act.High",
+          "value_def": "Numeric0-127"
+        },
+        {
+          "label": "Target.Source",
+          "value_def": "AssignTargetSource"
+        },
+        {
+          "label": "      Target.Low",
+          "value_def": "Numeric0-255"
+        },
+        {
+          "label": "      Target.High",
+          "value_def": "Numeric0-255"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "INPUT",
+      "section_name": "Setup",
+      "field_group_label": "Input",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Gain: Inst 1",
+        "Gain: Inst 2",
+        "INPUT",
+        "Inst 1",
+        "Inst 1 NS",
+        "Inst 2",
+        "Inst 2 NS",
+        "Mic",
+        "Mic 1",
+        "Mic 1 Comp",
+        "Mic 1 NS",
+        "Mic 2",
+        "Mic 2 Comp",
+        "Mic 2 NS"
+      ],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Mic 1",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Gain: Inst 1",
+          "value_def": "Gain"
+        },
+        {
+          "label": "Gain: Inst 2",
+          "value_def": "Gain"
+        },
+        {
+          "label": "Mic",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Inst 1",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Inst 2",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 1 Comp",
+          "value_def": "Off-100"
+        },
+        {
+          "label": "Mic 2 Comp",
+          "value_def": "Off-100"
+        },
+        {
+          "label": "Mic 1 NS",
+          "value_def": "Numeric0-100"
+        },
+        {
+          "label": "Mic 2 NS",
+          "value_def": "Numeric0-100"
+        },
+        {
+          "label": "Inst 1 NS",
+          "value_def": "Numeric0-100"
+        },
+        {
+          "label": "Inst 2 NS",
+          "value_def": "Numeric0-100"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "OUTPUT",
+      "section_name": "Setup",
+      "field_group_label": "Output",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Main out",
+        "OUTPUT"
+      ],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Output Knob",
+          "value_def": "OutputKnob"
+        },
+        {
+          "label": "Main out",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Sub 1 out",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Sub 2 out",
+          "value_def": "Switch"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "ROUTING",
+      "section_name": "Routing:Track",
+      "field_group_label": "Output",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 Left",
+        "Inst 1 Right",
+        "Inst 2 Left",
+        "Inst 2 Right",
+        "Mic 1",
+        "Mic 2",
+        "Phones Rhythm",
+        "ROUTING",
+        "Rhythm",
+        "Rhythm Out",
+        "Track 1",
+        "Track 2",
+        "Track 3",
+        "Track 4",
+        "Track 5",
+        "Track 6"
+      ],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Track 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Track 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Track 3",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Track 4",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Track 5",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Track 6",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Track 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Track 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Track 3",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Track 4",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Track 5",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Track 6",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Track 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Track 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Track 3",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Track 4",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Track 5",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Track 6",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Track 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Track 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Track 3",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Track 4",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Track 5",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Track 6",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Track 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Track 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Track 3",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Track 4",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Track 5",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Track 6",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Track 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Track 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Track 3",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Track 4",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Track 5",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Track 6",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Track 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Track 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Track 3",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Track 4",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Track 5",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Track 6",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 Left",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 Right",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 Left",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 Right",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 Left",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 Right",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 Left",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 Right",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 Left",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 Right",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 Left",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 Right",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 Left",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 Right",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 Left",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 Right",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 Left",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 Right",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 Left",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 Right",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 Left",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 Right",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 Left",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 Right",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Mic 1",
+          "value_def": "Bitwise1"
+        },
+        {
+          "label": "Mic 2",
+          "value_def": "Bitwise2"
+        },
+        {
+          "label": "Inst 1 Left",
+          "value_def": "Bitwise4"
+        },
+        {
+          "label": "Inst 1 Right",
+          "value_def": "Bitwise8"
+        },
+        {
+          "label": "Inst 2 Left",
+          "value_def": "Bitwise16"
+        },
+        {
+          "label": "Inst 2 Right",
+          "value_def": "Bitwise32"
+        },
+        {
+          "label": "Rhythm",
+          "value_def": "Bitwise64"
+        },
+        {
+          "label": "Rhythm Out",
+          "value_def": "RhythmOut"
+        },
+        {
+          "label": "Phones Monitor",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Phones Rhythm",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Phones Out",
+          "value_def": "PhonesOut"
+        },
+        {
+          "label": "Input Thru",
+          "value_def": "Switch"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "MIXER",
+      "section_name": "Input",
+      "field_group_label": "Mixer",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [
+        "Inst 1 L: Level",
+        "Inst 1 L: Mute",
+        "Inst 1 R: Level",
+        "Inst 1 R: Mute",
+        "Inst 2 L: Level",
+        "Inst 2 L: Mute",
+        "Inst 2 R: Level",
+        "Inst 2 R: Mute",
+        "MIXER",
+        "Mic 1: Level",
+        "Mic 1: Mute",
+        "Mic 2: Level",
+        "Mic 2: Mute",
+        "Rhythm: Level"
+      ],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Mic 1: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Mic 1: Mute",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Mic 2: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Mic 2: Mute",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Inst 1 L: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Inst 1 L: Mute",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Inst 1 R: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Inst 1 R: Mute",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Inst 2 L: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Inst 2 L: Mute",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Inst 2 R: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Inst 2 R: Mute",
+          "value_def": "Switch"
+        },
+        {
+          "label": "Loop: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Rhythm: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Main L: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Main R: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Sub1 L: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Sub1 R: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Sub2 L: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Sub1 R: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Phones: Level",
+          "value_def": "Numeric0-200"
+        },
+        {
+          "label": "Master: Level",
+          "value_def": "Numeric0-200"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Master FX",
+      "field_group_label": "Output",
+      "apparent_value_type": "composite(section with field ValueDef entries)",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "field_entries": [
+        {
+          "label": "Comp",
+          "value_def": "Off-40"
+        },
+        {
+          "label": "Reverb",
+          "value_def": "Numeric0-100"
+        },
+        {
+          "label": "Insert",
+          "value_def": "Insert"
+        }
+      ],
+      "evidence": {
+        "class": "app_bundle_compiled_xml_strings",
+        "confidence": "high"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Reverse",
+      "apparent_value_type": "Switch",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "1 Shot",
+      "apparent_value_type": "Switch",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Pan",
+      "apparent_value_type": "Pan",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Play Level",
+      "apparent_value_type": "Numeric0-200",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Start Mode",
+      "apparent_value_type": "StartMode",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Stop Mode",
+      "apparent_value_type": "StopMode",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Dub Mode",
+      "apparent_value_type": "DubMode",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Fx",
+      "apparent_value_type": "Switch",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Play Mode",
+      "apparent_value_type": "PlayMode",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Measure",
+      "apparent_value_type": "Measure",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Tempo Sync",
+      "apparent_value_type": "Switch",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "TRACK",
+      "section_name": "Track",
+      "field_group_label": "Loop Sync",
+      "apparent_value_type": "LoopSyncMode",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Balance",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Time",
+      "apparent_value_type": "DelayTime1000",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Feedback",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Rate",
+      "apparent_value_type": "Rate",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Depth",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "LO Cut",
+      "apparent_value_type": "EqLoCut12.5",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Hi Cut",
+      "apparent_value_type": "EqHighCut12.5",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "D.Level",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "E.Level",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Attack",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Release",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Decay",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Sustain",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Pre-Delay",
+      "apparent_value_type": "FxPreDelay",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Density",
+      "apparent_value_type": "Numeric1-10",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Threshold",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Gate Time",
+      "apparent_value_type": "FxGateTime",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Type",
+      "apparent_value_type": "FxBeatScatterType",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Length",
+      "apparent_value_type": "FxBeatScatterLength",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Shift",
+      "apparent_value_type": "FxBeatShiftShift",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    },
+    {
+      "category": "FX",
+      "section_name": "Effects",
+      "field_group_label": "Flick",
+      "apparent_value_type": "Numeric0-100",
+      "bus_or_track_or_system_keys": [],
+      "copy_paste_scope": null,
+      "evidence": {
+        "class": "app_bundle_parameter_help_json",
+        "confidence": "medium"
+      }
+    }
+  ],
+  "unknowns": [
+    "No direct official RC-600 PDF/manual content found in this workspace to validate labels/types.",
+    "No uploaded RC0/XML files found in this workspace for direct field-key mapping.",
+    "A/B/C... leaf keys in embedded XML templates are not mapped to canonical field names in this artifact.",
+    "Shared RC-505mk2 infrastructure exists in the bundle; only RC-600 database-name-scoped records were included."
+  ]
+}
