@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>John Taylor © 2023</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.rc600editor.rc600editor.help</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>RC-600 Editor</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1</string>
+	<key>CFBundleSignature</key>
+	<string>hbwr</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>HPDBookAccessPath</key>
+	<string>help.html</string>
+	<key>HPDBookIconPath</key>
+	<string>shrd/the_eye.png</string>
+	<key>HPDBookIndexPath</key>
+	<string>help.helpindex</string>
+	<key>HPDBookKBProduct</key>
+	<string>rc600Editor</string>
+	<key>HPDBookRemoteURL</key>
+	<string>https://www.rc600editor.com/help.html</string>
+	<key>HPDBookTitle</key>
+	<string>RC600 / RC-505mk2 Editor Help</string>
+	<key>HPDBookType</key>
+	<string>3</string>
+</dict>
+</plist>

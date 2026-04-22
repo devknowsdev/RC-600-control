@@ -1,0 +1,197 @@
+{
+  "deviceType": "RC-505mk2",
+  "version": "1.0", 
+  "parameters": {
+    "Reverse": {
+      "description": "When ON, the track plays in reverse direction. When OFF, the track plays normally forward.",
+      "valueType": "Switch",
+      "section": "Track"
+    },
+    "1 Shot": {
+      "description": "When ON, the track automatically stops after one complete playback cycle. When OFF, the track loops continuously.",
+      "valueType": "Switch",
+      "section": "Track"
+    },
+    "Pan": {
+      "description": "Adjusts the stereo position of the track output. L64 is full left, C is center, R63 is full right.",
+      "valueType": "Pan",
+      "section": "Track"
+    },
+    "Play Level": {
+      "description": "Sets the playback volume level for the track. Range is 0-200 where 100 is unity gain.",
+      "valueType": "Numeric0-200",
+      "section": "Track"
+    },
+    "Start Mode": {
+      "description": "Determines how the track starts recording/playing. Options include IMM (immediate), REC END (after recording ends), PLAY END (after playback ends), and FADE IN.",
+      "valueType": "StartMode",
+      "section": "Track"
+    },
+    "Stop Mode": {
+      "description": "Determines how the track stops playing. Options include IMM (immediate), LOOP END (at end of current loop), REC END (after recording ends), and FADE OUT.",
+      "valueType": "StopMode",
+      "section": "Track"
+    },
+    "Dub Mode": {
+      "description": "Sets the overdub recording behavior. Options include OVERDUB (layers new audio), REPLACE (replaces existing audio).",
+      "valueType": "DubMode",
+      "section": "Track"
+    },
+    "Fx": {
+      "description": "Enables or disables track effects processing. When ON, the assigned track effects are applied to the audio.",
+      "valueType": "Switch",
+      "section": "Track"
+    },
+    "Play Mode": {
+      "description": "Determines the track playback behavior. Options include LOOP (continuous looping) and 1SHOT (play once and stop).",
+      "valueType": "PlayMode",
+      "section": "Track"
+    },
+    "Measure": {
+      "description": "Sets the measure count for the track loop. Determines how many beats/measures the loop will contain.",
+      "valueType": "Measure",
+      "section": "Track"
+    },
+    "Tempo Sync": {
+      "description": "When ON, the track synchronizes to the master tempo. When OFF, the track plays at its recorded tempo.",
+      "valueType": "Switch",
+      "section": "Track"
+    },
+    "Loop Sync": {
+      "description": "Determines how tracks synchronize with each other during loop playback.",
+      "valueType": "LoopSyncMode",
+      "section": "Track"
+    },
+    "Balance": {
+      "description": "Adjusts the balance between dry and effect signal. 0 is full dry, 100 is full effect.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Time": {
+      "description": "Sets the delay time or reverb time parameter. Units and range depend on the specific effect.",
+      "valueType": "DelayTime1000",
+      "section": "Effects"
+    },
+    "Feedback": {
+      "description": "Controls the amount of delayed signal fed back into the effect. Higher values create more repeats.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Rate": {
+      "description": "Controls the modulation rate for time-based effects like chorus, flanger, or tremolo.",
+      "valueType": "Rate",
+      "section": "Effects"
+    },
+    "Depth": {
+      "description": "Controls the intensity or depth of modulation for effects. Higher values create more pronounced effects.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "LO Cut": {
+      "description": "High-pass filter that removes low frequencies below the set point. Helps clean up muddy low end.",
+      "valueType": "EqLoCut12.5",
+      "section": "Effects"
+    },
+    "Hi Cut": {
+      "description": "Low-pass filter that removes high frequencies above the set point. Helps remove harsh highs.",
+      "valueType": "EqHighCut12.5",
+      "section": "Effects"
+    },
+    "D.Level": {
+      "description": "Direct Level - controls the volume of the unprocessed (dry) signal in the effect output mix.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "E.Level": {
+      "description": "Effect Level - controls the volume of the processed (wet) signal in the effect output mix.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Attack": {
+      "description": "Controls how quickly the effect engages when the input signal crosses the threshold.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Release": {
+      "description": "Controls how quickly the effect disengages when the input signal drops below the threshold.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Decay": {
+      "description": "Controls how quickly the effect level decreases after the initial attack phase.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Sustain": {
+      "description": "Sets the level at which the effect is maintained during the sustain phase.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Pre-Delay": {
+      "description": "Sets the delay time before reverb begins. Creates space between the direct sound and reverb tail.",
+      "valueType": "FxPreDelay",
+      "section": "Effects"
+    },
+    "Density": {
+      "description": "Controls the density of reverb reflections. Higher values create thicker, more diffused reverb.",
+      "valueType": "Numeric1-10",
+      "section": "Effects"
+    },
+    "Threshold": {
+      "description": "Sets the input level threshold for triggering gated effects. Signal below this level is cut off.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    },
+    "Gate Time": {
+      "description": "Controls how long the gate stays open after the signal drops below the threshold.",
+      "valueType": "FxGateTime",
+      "section": "Effects"
+    },
+    "Type": {
+      "description": "Selects the type or variation of the effect algorithm. Options vary by effect category.",
+      "valueType": "FxBeatScatterType",
+      "section": "Effects"
+    },
+    "Length": {
+      "description": "Controls the length or duration of beat-based effects like scatter, repeat, or shift.",
+      "valueType": "FxBeatScatterLength",
+      "section": "Effects"
+    },
+    "Shift": {
+      "description": "Controls the timing shift amount for beat shift effects. Positive values shift forward, negative backward.",
+      "valueType": "FxBeatShiftShift",
+      "section": "Effects"
+    },
+    "Flick": {
+      "description": "Controls the intensity of the vinyl flick effect, simulating the sound of touching a spinning record.",
+      "valueType": "Numeric0-100",
+      "section": "Effects"
+    }
+  },
+  "valueTypes": {
+    "Switch": {
+      "description": "ON/OFF toggle switch",
+      "values": ["OFF", "ON"]
+    },
+    "Pan": {
+      "description": "Stereo pan position",
+      "range": "L64 to R63"
+    },
+    "Numeric0-200": {
+      "description": "Numeric value range 0-200",
+      "range": "0 to 200"
+    },
+    "Numeric0-100": {
+      "description": "Numeric value range 0-100",
+      "range": "0 to 100"
+    },
+    "Numeric1-10": {
+      "description": "Numeric value range 1-10",
+      "range": "1 to 10"
+    },
+    "Decimal1-10": {
+      "description": "Decimal value range 1.0-10.0",
+      "range": "1.0 to 10.0"
+    }
+  }
+}

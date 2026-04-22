@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RC600 Audio Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+        }
+        .controls { margin: 20px 0; }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover { background: #444; }
+        button:disabled { background: #222; color: #666; cursor: not-allowed; }
+        .status { margin: 10px 0; color: #0af; }
+        .debug { margin: 10px 0; font-family: monospace; font-size: 12px; color: #888; }
+    </style>
+</head>
+<body>
+    <h2>RC600 Web Audio Test</h2>
+    <div class="status" id="status">Initializing...</div>
+
+    <div class="controls">
+        <button onclick="initAudio()">Initialize Audio</button>
+        <button onclick="testKick()">Test Kick</button>
+        <button onclick="testSnare()">Test Snare</button>
+        <button onclick="testHiHat()">Test Hi-Hat</button>
+        <button onclick="testPattern()">Test Pattern</button>
+        <button onclick="stopAll()">Stop All</button>
+    </div>
+
+    <div class="debug" id="debug"></div>
+
+    <script>
+        let audioContext = null;
+        let drumKit = {};
+        let isInitialized = false;
+
+        function log(message) {
+            console.log(message);
+            document.getElementById('debug').innerHTML += message + '<br>';
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Simple drum sounds using oscillators and noise
+        function createKickDrum(audioContext) {
+            return (time = 0, duration = 0.5) => {
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                const filter = audioContext.createBiquadFilter();
+
+                oscillator.frequency.setValueAtTime(60, audioContext.currentTime + time);
+                oscillator.frequency.exponentialRampToValueAtTime(0.01, audioContext.currentTime + time + duration);
+
+                gainNode.gain.setValueAtTime(1, audioContext.currentTime + time);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + time + duration);
+
+                filter.type = 'lowpass';
+                filter.frequency.value = 100;
+
+                oscillator.connect(filter);
+                filter.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+
+                oscillator.start(audioContext.currentTime + time);
+                oscillator.stop(audioContext.currentTime + time + duration);
+            };
+        }
+
+        function createSnareDrum(audioContext) {
+            return (time = 0, duration = 0.2) => {
+                // Noise component
+                const bufferSize = audioContext.sampleRate * duration;
+                const buffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+                const data = buffer.getChannelData(0);
+
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = Math.random() * 2 - 1;
+                }
+
+                const noise = audioContext.createBufferSource();
+                noise.buffer = buffer;
+
+                const filter = audioContext.createBiquadFilter();
+                filter.type = 'bandpass';
+                filter.frequency.value = 1000;
+
+                const gainNode = audioContext.createGain();
+                gainNode.gain.setValueAtTime(0.3, audioContext.currentTime + time);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + time + duration);
+
+                noise.connect(filter);
+                filter.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+
+                noise.start(audioContext.currentTime + time);
+            };
+        }
+
+        function createHiHat(audioContext) {
+            return (time = 0, duration = 0.1) => {
+                const bufferSize = audioContext.sampleRate * duration;
+                const buffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+                const data = buffer.getChannelData(0);
+
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / bufferSize, 2);
+                }
+
+                const noise = audioContext.createBufferSource();
+                noise.buffer = buffer;
+
+                const filter = audioContext.createBiquadFilter();
+                filter.type = 'highpass';
+                filter.frequency.value = 7000;
+
+                const gainNode = audioContext.createGain();
+                gainNode.gain.setValueAtTime(0.2, audioContext.currentTime + time);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + time + duration);
+
+                noise.connect(filter);
+                filter.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+
+                noise.start(audioContext.currentTime + time);
+            };
+        }
+
+        async function initAudio() {
+            try {
+                updateStatus('Initializing audio context...');
+
+                if (!audioContext) {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+
+                if (audioContext.state === 'suspended') {
+                    await audioContext.resume();
+                }
+
+                // Create drum kit
+                drumKit = {
+                    kick: createKickDrum(audioContext),
+                    snare: createSnareDrum(audioContext),
+                    hihat: createHiHat(audioContext)
+                };
+
+                isInitialized = true;
+                updateStatus('Audio initialized successfully!');
+                log('Audio context state: ' + audioContext.state);
+                log('Sample rate: ' + audioContext.sampleRate + ' Hz');
+
+            } catch (error) {
+                updateStatus('Failed to initialize audio: ' + error.message);
+                log('Error: ' + error.message);
+            }
+        }
+
+        function testKick() {
+            if (!isInitialized) {
+                updateStatus('Please initialize audio first');
+                return;
+            }
+            log('Playing kick drum');
+            drumKit.kick();
+        }
+
+        function testSnare() {
+            if (!isInitialized) {
+                updateStatus('Please initialize audio first');
+                return;
+            }
+            log('Playing snare drum');
+            drumKit.snare();
+        }
+
+        function testHiHat() {
+            if (!isInitialized) {
+                updateStatus('Please initialize audio first');
+                return;
+            }
+            log('Playing hi-hat');
+            drumKit.hihat();
+        }
+
+        function testPattern() {
+            if (!isInitialized) {
+                updateStatus('Please initialize audio first');
+                return;
+            }
+
+            log('Playing test pattern...');
+            updateStatus('Playing 4/4 beat pattern...');
+
+            // Simple 4/4 beat pattern
+            const bpm = 120;
+            const beatInterval = 60 / bpm; // seconds per beat
+
+            // Kick on beats 1 and 3
+            drumKit.kick(0);
+            drumKit.kick(beatInterval * 2);
+
+            // Snare on beats 2 and 4
+            drumKit.snare(beatInterval);
+            drumKit.snare(beatInterval * 3);
+
+            // Hi-hats on all 8th notes
+            for (let i = 0; i < 8; i++) {
+                drumKit.hihat(beatInterval * i * 0.5);
+            }
+        }
+
+        function stopAll() {
+            if (audioContext) {
+                // Note: Individual sounds will stop naturally due to their short duration
+                // For longer sounds, you'd need to track and stop individual sources
+                updateStatus('Stopping all sounds...');
+                log('Stop requested');
+            }
+        }
+
+        // Function to be called from C# - play rhythm pattern
+        function playRhythmPattern(patternData) {
+            if (!isInitialized) {
+                log('Audio not initialized - cannot play pattern');
+                return;
+            }
+
+            try {
+                log('Playing rhythm pattern: ' + JSON.stringify(patternData));
+
+                if (patternData.notes) {
+                    patternData.notes.forEach(note => {
+                        const time = note.time || 0;
+                        const velocity = (note.velocity || 127) / 127; // Normalize to 0-1
+
+                        // Map MIDI note numbers to drum sounds
+                        switch (note.note) {
+                            case 36: // Kick
+                                drumKit.kick(time);
+                                break;
+                            case 38: // Snare
+                                drumKit.snare(time);
+                                break;
+                            case 42: // Hi-hat
+                                drumKit.hihat(time);
+                                break;
+                            default:
+                                log('Unknown drum note: ' + note.note);
+                        }
+                    });
+                }
+            } catch (error) {
+                log('Error playing pattern: ' + error.message);
+            }
+        }
+
+        // Auto-initialize on page load (optional)
+        window.addEventListener('load', () => {
+            updateStatus('Ready to initialize audio');
+            log('Page loaded - click Initialize Audio to begin');
+        });
+    </script>
+</body>
+</html>
