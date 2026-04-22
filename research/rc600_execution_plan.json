@@ -1,0 +1,148 @@
+{
+  "artifact_type": "rc600_prioritized_execution_plan",
+  "inputs": [
+    "research/rc600_dev_convergence_audit.json",
+    "research/rc600_claim_validation.json",
+    "research/sources/rc600_rc0xml_validation_excerpt.xml"
+  ],
+  "planning_principles": [
+    "Convergence over novelty.",
+    "Working RC editor is benchmark for coverage/usability, not canonical truth.",
+    "Source precedence for semantics: official docs > RC0/XML > repo schema/frontmatter > style refs.",
+    "No monolithic rewrite; incremental planner-capability gains only."
+  ],
+  "domain_plan": {
+    "ROUTING": {
+      "current_state": "Validated structure exists in research artifacts, but no explicit editable routing-matrix state model is present in app-facing schema/state.",
+      "target_state": "Per-memory routing model with explicit Track and Input/Rhythm matrices, destination groups, and conditional phones behavior represented in typed state.",
+      "smallest_corrective_step": "Introduce MemoryRouting schema + state adapter with two sub-maps (routing_track, routing_input_rhythm) and destination keys MAIN/SUB1/SUB2/PHONES.",
+      "affected_areas": {
+        "schema": ["memory-routing schema", "enum definitions for destinations and members"],
+        "state": ["memory plan state", "routing edit reducers/selectors"],
+        "ui": ["read-only matrix view first", "then editable toggles with validation hints"]
+      },
+      "validation_requirement": "Fixture-based checks: route matrix round-trip (state -> serialized representation -> state) + destination/member completeness checks against validated claim set.",
+      "delivery_class": "prerequisite"
+    },
+    "TRACK_BOUNCE_IN": {
+      "current_state": "Bounce In semantics are validated but currently represented as evidence/claims, not typed per-track planning state.",
+      "target_state": "Each track has a typed input-source set and bounce intent that can be planned, validated, and diffed across memories.",
+      "smallest_corrective_step": "Add TrackInputSourceSet type and attach to each TrackPlan object (mic1/mic2/inst1L/inst1R/inst2L/inst2R/rhythm + bounce_enabled).",
+      "affected_areas": {
+        "schema": ["track input-source schema", "track plan object"],
+        "state": ["track edit actions", "cross-track dependency checks"],
+        "ui": ["source-set picker", "bounce context hinting"]
+      },
+      "validation_requirement": "Track fixture tests for source-set persistence and conflict warnings (e.g., bounce enabled with empty source set).",
+      "delivery_class": "prerequisite"
+    },
+    "ASSIGN": {
+      "current_state": "ASSIGN1..16 field family is validated, but no enforceable typed assign-bank model is operationalized.",
+      "target_state": "Assign bank represented as 16 typed slots with required fields, light invariants, and deterministic diff output.",
+      "smallest_corrective_step": "Implement AssignSlot schema (x16) with switch, source, mode, act_low, act_high, target, target_low, target_high plus invariant validators.",
+      "affected_areas": {
+        "schema": ["assign slot schema", "assign bank schema"],
+        "state": ["assign slot reducers", "validation result cache"],
+        "ui": ["slot list/editor", "inline range validation messages"]
+      },
+      "validation_requirement": "Fixture suite proving all 16 slots serialize/deserialize and pass required-field + range checks.",
+      "delivery_class": "prerequisite"
+    },
+    "CTL_FUNC": {
+      "current_state": "Pedal modes and ext/exp structures are validated but flattened; no dedicated control-plan model is exposed.",
+      "target_state": "Mode-indexed control plan with separate pedal-mode map, external controls, expression controls, and isolated compatibility metadata.",
+      "smallest_corrective_step": "Create ControlPlan schema: pedal_modes[1..3][pedal1..9], ext_ctrl[ctl1..4], expression[exp1..2], compatibility_metadata.",
+      "affected_areas": {
+        "schema": ["control plan schema", "function/min/max field definitions"],
+        "state": ["mode switch state", "control assignment reducers"],
+        "ui": ["mode tabs", "ext/exp panels", "guardrail-only compatibility display"]
+      },
+      "validation_requirement": "Mode coverage fixtures (all 3 modes and 9 pedals each) + ext/exp min/max persistence checks.",
+      "delivery_class": "prerequisite"
+    },
+    "MEMORY_SET_PLANNING_UX": {
+      "current_state": "Current outputs are research/audit artifacts; no planner-first memory aggregate workflow is visible.",
+      "target_state": "Planner-first MemoryPlan workflow: draft memory, validate, diff vs baseline, assemble setlist, mark export/sync readiness.",
+      "smallest_corrective_step": "Introduce MemoryPlan aggregate object + minimal planner workflow (draft -> validate -> diff summary).",
+      "affected_areas": {
+        "schema": ["MemoryPlan aggregate", "SetPlan aggregate"],
+        "state": ["workflow state machine", "dirty/validated flags"],
+        "ui": ["memory workspace", "validation panel", "diff summary sidebar"]
+      },
+      "validation_requirement": "End-to-end fixture scenario with 3-5 memory plans showing meaningful diffs and validation gating.",
+      "delivery_class": "follow_on"
+    }
+  },
+  "recommended_implementation_order": [
+    "1) ROUTING schema/state foundation",
+    "2) TRACK Bounce In / input-source typed model",
+    "3) ASSIGN bank typed model (x16) + invariants",
+    "4) CTL_FUNC control-plan typed model",
+    "5) MemoryPlan aggregate + planner UX shell",
+    "6) Incremental domain UI editors on top of validated state"
+  ],
+  "stop_keep_start": {
+    "stop_doing": [
+      "Stop treating evidence artifacts as a substitute for runtime state models.",
+      "Stop flattening domain semantics into generic key/value blocks without typed constraints.",
+      "Stop mixing compatibility/guardrail metadata directly into semantic planner fields."
+    ],
+    "keep_doing": [
+      "Keep explicit source-tier provenance for every semantic decision.",
+      "Keep fixture-driven validation before widening UI scope.",
+      "Keep benchmark comparison against working editor for usability/coverage checks."
+    ],
+    "start_doing": [
+      "Start implementing typed domain schemas as first-class planner state.",
+      "Start adding deterministic diff outputs for memory-level changes.",
+      "Start shipping vertical slices (state + validation + minimal UI) per domain."
+    ]
+  },
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Structural convergence",
+      "scope": [
+        "Routing schema/state",
+        "Track input-source schema/state",
+        "Assign bank schema/state",
+        "Ctl function schema/state"
+      ],
+      "exit_criteria": [
+        "All four domain schemas implemented and wired into MemoryPlan draft state.",
+        "No domain remains claim-only in planner core models."
+      ]
+    },
+    {
+      "id": "M2",
+      "name": "Validation fixtures and diff confidence",
+      "scope": [
+        "Fixture packs per domain",
+        "cross-domain memory fixtures",
+        "state diff renderer for memory plans"
+      ],
+      "exit_criteria": [
+        "Fixture suite passes for routing/track/assign/ctl plan objects.",
+        "Memory-level diff output is deterministic and human-reviewable."
+      ]
+    },
+    {
+      "id": "M3",
+      "name": "Planner-first UX",
+      "scope": [
+        "Draft -> validate -> diff workflow",
+        "domain editors layered over validated state",
+        "setlist assembly view"
+      ],
+      "exit_criteria": [
+        "User can build/edit a small set of memories with validation feedback.",
+        "Planner UX supports comparison and confidence checks before export/sync work."
+      ]
+    }
+  ],
+  "risks": {
+    "biggest_semantic_risk": "Overfitting to benchmark editor-specific metadata (or app-bundle quirks) where official-doc/RC0 semantics are silent.",
+    "biggest_ux_risk": "Adding domain depth without progressive disclosure, causing planners to feel dense and error-prone.",
+    "biggest_architecture_risk": "UI-first patching before typed state convergence, leading to fragile coupling and rework during sync/export integration."
+  }
+}

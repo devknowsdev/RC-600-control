@@ -1,0 +1,187 @@
+{
+  "artifact_type": "claim_validation",
+  "artifact_scope": "RC-600 prioritized crosswalk claims",
+  "status_scale": ["confirmed", "partially_confirmed", "still_inferred", "rejected"],
+  "status_rule": {
+    "confirmed": "supported by official docs and corroborated by XML",
+    "partially_confirmed": "strongly corroborated by XML but not yet doc-confirmed",
+    "still_inferred": "bundle-only or unresolved",
+    "rejected": "contradicted by stronger evidence"
+  },
+  "source_authority_order": ["official_docs", "uploaded_rc0_xml", "app_bundle_secondary"],
+  "authoritative_sources_used": {
+    "official_docs": [
+      {
+        "id": "DOC-RC600-PARAM-ENG01",
+        "title": "RC-600 Parameter Guide",
+        "url": "https://static.roland.com/assets/media/pdf/RC-600_Parameter_eng01_W.pdf",
+        "evidence_refs": ["turn5view0", "turn5view1", "turn6view0", "turn6view1", "turn6view3"]
+      }
+    ],
+    "uploaded_rc0_xml": [
+      {
+        "id": "XML-RC600-EXCERPT",
+        "path": "research/sources/rc600_rc0xml_validation_excerpt.xml",
+        "notes": "RC0/XML corroboration excerpt used as second authority tier."
+      }
+    ],
+    "app_bundle_secondary": [
+      "research/rc600_app_bundle_schema_index.json",
+      "research/rc600_crosswalk_candidate.json"
+    ]
+  },
+  "validations": [
+    {
+      "claim_id": "ROUTING-APP-001",
+      "domain": "ROUTING",
+      "validation_status": "confirmed",
+      "docs_confirm": [
+        "ROUTING is split into TRACK and INPUT/RHYTHM sections with MAIN/SUB/PHONES destinations."
+      ],
+      "rc0_xml_confirm": [
+        "XML contains Routing:Track and Routing:Input/Rhythm sections in the same output group hierarchy."
+      ],
+      "bundle_only_inference": [],
+      "evidence_notes": {
+        "official_docs": ["DOC-RC600-PARAM-ENG01: turn5view0 lines 474-551"],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 1736-2192"],
+        "app_bundle_secondary": []
+      }
+    },
+    {
+      "claim_id": "ROUTING-APP-002",
+      "domain": "ROUTING",
+      "validation_status": "partially_confirmed",
+      "docs_confirm": [
+        "Docs confirm Track 1-6 destination assignment behavior for routing."
+      ],
+      "rc0_xml_confirm": [
+        "XML encodes Track 1-6 entries with Bitwise1/2/4/8/16/32 in Routing:Track groups."
+      ],
+      "bundle_only_inference": [
+        "Interpretation of bitwise storage as canonical wire-format semantics remains inference until explicit doc statement."
+      ],
+      "evidence_notes": {
+        "official_docs": ["DOC-RC600-PARAM-ENG01: turn5view0 lines 476-491"],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 1737-1933"],
+        "app_bundle_secondary": ["App schema index uses the same Bitwise1..Bitwise32 pattern for Track routing."]
+      }
+    },
+    {
+      "claim_id": "ROUTING-APP-003",
+      "domain": "ROUTING",
+      "validation_status": "confirmed",
+      "docs_confirm": [
+        "Docs confirm INPUT/RHYTHM routing members and RHYTHM OUT / PHONES OUT related controls."
+      ],
+      "rc0_xml_confirm": [
+        "XML contains Mic/Inst/Rhythm Input-Routing groups with Bitwise1..Bitwise64 and fields Rhythm Out, Phones Out, Input Thru."
+      ],
+      "bundle_only_inference": [],
+      "evidence_notes": {
+        "official_docs": ["DOC-RC600-PARAM-ENG01: turn5view0 lines 495-547"],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 1934-2192"],
+        "app_bundle_secondary": []
+      }
+    },
+    {
+      "claim_id": "TRACK-APP-002",
+      "domain": "TRACK",
+      "validation_status": "partially_confirmed",
+      "docs_confirm": [
+        "Docs confirm Bounce In behavior and track input-source controls (MIC/INST/RHYTHM)."
+      ],
+      "rc0_xml_confirm": [
+        "XML Bounce In group lists Mic/Inst/Rhythm sources with Bitwise1..Bitwise64 coding."
+      ],
+      "bundle_only_inference": [
+        "Canonical guarantee that this bitwise layout is the persisted RC0 wire representation is not explicitly stated in docs."
+      ],
+      "evidence_notes": {
+        "official_docs": ["DOC-RC600-PARAM-ENG01: turn5view1 lines 151-159"],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 65-97, 180-212"],
+        "app_bundle_secondary": ["App schema index reflects same Bounce In source set and bitwise labels."]
+      }
+    },
+    {
+      "claim_id": "ASSIGN-APP-001",
+      "domain": "ASSIGN",
+      "validation_status": "partially_confirmed",
+      "docs_confirm": [
+        "Docs confirm ASSIGN1-16 exist and are memory-scoped parameters."
+      ],
+      "rc0_xml_confirm": [
+        "XML contains ASSIGN1..ASSIGN16 sections and includes assign-level copyPasteScope metadata."
+      ],
+      "bundle_only_inference": [
+        "copyPasteScope behavior is XML/schema-level metadata and not explicitly described in official docs."
+      ],
+      "evidence_notes": {
+        "official_docs": ["DOC-RC600-PARAM-ENG01: turn6view0 lines 1154-1156"],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 1159-1734"],
+        "app_bundle_secondary": ["App schema index includes same ASSIGN1..16 copy/paste scope information."]
+      }
+    },
+    {
+      "claim_id": "ASSIGN-APP-002",
+      "domain": "ASSIGN",
+      "validation_status": "confirmed",
+      "docs_confirm": [
+        "Docs enumerate SW, SOURCE, SOURCE MODE, ACT.LO/HI, TARGET, TARGET MIN/MAX fields."
+      ],
+      "rc0_xml_confirm": [
+        "XML repeats Action.Source, Mode, Act.Low, Act.High, Target.Source, Target.Low, Target.High in assign blocks."
+      ],
+      "bundle_only_inference": [],
+      "evidence_notes": {
+        "official_docs": [
+          "DOC-RC600-PARAM-ENG01: turn6view0 lines 1157-1172",
+          "DOC-RC600-PARAM-ENG01: turn6view1 lines 1173-1187"
+        ],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 1164-1192 (ASSIGN1 exemplar), repeated through ASSIGN16"],
+        "app_bundle_secondary": []
+      }
+    },
+    {
+      "claim_id": "CTL-APP-001",
+      "domain": "CTL_FUNC",
+      "validation_status": "confirmed",
+      "docs_confirm": [
+        "Docs confirm PEDAL MODE1-3 and PEDAL 1-9 function configuration."
+      ],
+      "rc0_xml_confirm": [
+        "XML contains ICTL1/2/3_PEDAL1..9 with function plus Min/Max range fields."
+      ],
+      "bundle_only_inference": [],
+      "evidence_notes": {
+        "official_docs": ["DOC-RC600-PARAM-ENG01: turn6view3 lines 607-623"],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 673-1050"],
+        "app_bundle_secondary": []
+      }
+    },
+    {
+      "claim_id": "CTL-APP-002",
+      "domain": "CTL_FUNC",
+      "validation_status": "confirmed",
+      "docs_confirm": [
+        "Docs confirm CTL1-4 and EXP1/2 control sources and assignment context."
+      ],
+      "rc0_xml_confirm": [
+        "XML contains ECTL_CTL1..4 with CtrlFunc and ECTL_EXP1..2 with ExpFunc, each with Min/Max fields."
+      ],
+      "bundle_only_inference": [],
+      "evidence_notes": {
+        "official_docs": ["DOC-RC600-PARAM-ENG01: turn6view0 lines 1148-1170"],
+        "uploaded_rc0_xml": ["XML-RC600-EXCERPT: lines 1051-1158"],
+        "app_bundle_secondary": []
+      }
+    }
+  ],
+  "guardrail_notes": [
+    {
+      "claim_id": "CTL-APP-003",
+      "status": "still_inferred",
+      "note": "Retained as guardrail-only. XML shows an ignored RC-505mk2 compatibility-labeled B field, but no stronger evidence elevates it to a validated RC-600 semantic claim."
+    }
+  ]
+}

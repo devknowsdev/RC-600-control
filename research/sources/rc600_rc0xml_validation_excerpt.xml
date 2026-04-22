@@ -1,0 +1,2192 @@
+<!-- Extracted RC-600 XML validation excerpt from uploaded project artifacts -->
+<!-- lines 53-721 from rc600_database_block_2.xml -->
+    <TRACK1 sectionGroupOrder="1" sectionGroup="Loop"  sectionOrder="1" section="Track 1" valueGroup="Track 1" valueGroupOrder="1" canCopyPaste="true" copyPasteScope="track" copyPasteLevel="section">
+      <A valueType="standard"  valueOrder="0">
+        <DisplayName>Reverse</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" valueOrder="1">
+        <DisplayName>1 Shot</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </B>
+      <C valueType="standard" valueOrder="2">
+        <DisplayName>Pan</DisplayName>
+        <ValueDef>Pan</ValueDef>
+      </C>
+      <D valueType="standard" valueOrder="3" broadcastKey="Track_Volume" broadcastOnChange="true">
+        <DisplayName>Play Level</DisplayName>
+        <ValueDef>Numeric0-200</ValueDef>
+      </D>
+      <E valueType="standard" valueOrder="4">
+        <DisplayName>Start Mode</DisplayName>
+        <ValueDef>StartMode</ValueDef>
+      </E>
+      <F valueType="standard" valueOrder="5">
+        <DisplayName>Stop Mode</DisplayName>
+        <ValueDef>StopMode</ValueDef>
+      </F>
+      <G valueType="standard" valueOrder="6">
+        <DisplayName>Dub Mode</DisplayName>
+        <ValueDef>DubMode</ValueDef>
+      </G>
+      <H valueType="standard" valueOrder="7">
+        <DisplayName>Fx</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </H>
+      <I valueType="standard" valueOrder="8">
+        <DisplayName>Play Mode</DisplayName>
+        <ValueDef>PlayMode</ValueDef>
+      </I>
+      <J valueType="standard" broadcastOnChange="true" broadcastKey="Track1_LoopMeasure"  valueOrder="9">
+        <DisplayName>Measure</DisplayName>
+        <ValueDef>Measure</ValueDef>
+      </J>
+      <K valueType="ignore" isVisible="false" valueOrder="10" comment="unknown">
+        <DisplayName>investigating!!!!</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </K>
+      <L valueType="standard"  valueOrder="11">
+        <DisplayName>Loop Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </L>
+      <M valueType="standard"  valueOrder="13">
+        <DisplayName>Tempo Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </M>
+      <N valueType="standard"  valueOrder="14">
+        <DisplayName>Tempo Sync Mode</DisplayName>
+        <ValueDef>TempoSyncMode</ValueDef>
+      </N>
+      <O valueType="standard"  valueOrder="15">
+        <DisplayName>Tempo Sync Speed</DisplayName>
+        <ValueDef>TempoSyncSpeed</ValueDef>
+      </O>
+      <P valueType="standard"  valueOrder="16">
+        <DisplayName>Bounce In</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </P>
+      <Q valueType="bitwise"  valueOrder="17">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Left)</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Right)</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Left)</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Right)</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </Q>
+      <R valueType="dynamic" isVisible="false" broadcastKey="Track1_LoopMeasure" comment="0,1, or 2. Original measure setting: 0=auto, 1=free(default), 2=measure length"  valueOrder="18">
+        <DisplayName>Measure Fallback</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </R>
+      <S valueType="ignore" isVisible="false" comment="loop full measure value (=1 when you have partial)"/>
+      <T valueType="ignore" isVisible="false" comment="loop partial measure (1,2,3,or 5 for sub measure parts)"/>
+      <U valueType="ignore" isVisible="false" comment="loop tempo"/>
+      <V valueType="ignore" isVisible="false" comment="loop measure length"/>
+	<W valueType="standard" isReadOnly="true" valueOrder="-1" comment="1 when there's a loop, else 0">
+			<DisplayName>WAV Recorded</DisplayName>
+			<ValueDef>YesNo</ValueDef>
+	</W>
+      <X valueType="ignore" isVisible="false" comment="loop length (x/v)=slength in bars"/>  
+      <Y valueType="standard" comment="loop sync mode"  valueOrder="12">
+        <DisplayName>Loop Sync Mode</DisplayName>
+        <ValueDef>LoopSyncMode</ValueDef>
+      </Y>
+    </TRACK1>
+    <TRACK2 sectionGroupOrder="1" sectionGroup="Loop"  sectionOrder="2" section="Track 2" valueGroup="Track 2" valueGroupOrder="2" canCopyPaste="true" copyPasteScope="track" copyPasteLevel="section">
+      <A valueType="standard"  valueOrder="0">
+        <DisplayName>Reverse</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" valueOrder="1">
+        <DisplayName>1 Shot</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </B>
+      <C valueType="standard" valueOrder="2">
+        <DisplayName>Pan</DisplayName>
+        <ValueDef>Pan</ValueDef>
+      </C>
+      <D valueType="standard" valueOrder="3" broadcastKey="Track_Volume" broadcastOnChange="true">
+        <DisplayName>Play Level</DisplayName>
+        <ValueDef>Numeric0-200</ValueDef>
+      </D>
+      <E valueType="standard" valueOrder="4">
+        <DisplayName>Start Mode</DisplayName>
+        <ValueDef>StartMode</ValueDef>
+      </E>
+      <F valueType="standard" valueOrder="5">
+        <DisplayName>Stop Mode</DisplayName>
+        <ValueDef>StopMode</ValueDef>
+      </F>
+      <G valueType="standard" valueOrder="6">
+        <DisplayName>Dub Mode</DisplayName>
+        <ValueDef>DubMode</ValueDef>
+      </G>
+      <H valueType="standard" valueOrder="7">
+        <DisplayName>Fx</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </H>
+      <I valueType="standard" valueOrder="8">
+        <DisplayName>Play Mode</DisplayName>
+        <ValueDef>PlayMode</ValueDef>
+      </I>
+      <J valueType="standard" broadcastOnChange="true" broadcastKey="Track2_LoopMeasure"  valueOrder="9">
+        <DisplayName>Measure</DisplayName>
+        <ValueDef>Measure</ValueDef>
+      </J>
+      <K valueType="ignore" isVisible="false" valueOrder="10" comment="unkown">
+        <DisplayName>investigating!!!!</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </K>
+      <L valueType="standard"  valueOrder="11">
+        <DisplayName>Loop Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </L>
+      <M valueType="standard"  valueOrder="13">
+        <DisplayName>Tempo Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </M>
+      <N valueType="standard"  valueOrder="14">
+        <DisplayName>Tempo Sync Mode</DisplayName>
+        <ValueDef>TempoSyncMode</ValueDef>
+      </N>
+      <O valueType="standard"  valueOrder="15">
+        <DisplayName>Tempo Sync Speed</DisplayName>
+        <ValueDef>TempoSyncSpeed</ValueDef>
+      </O>
+      <P valueType="standard"  valueOrder="16">
+        <DisplayName>Bounce In</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </P>
+      <Q valueType="bitwise"  valueOrder="17">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Left)</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Right)</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Left)</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Right)</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </Q>
+      <R valueType="dynamic" isVisible="false" broadcastKey="Track2_LoopMeasure" comment="0,1, or 2. Original measure setting: 0=auto, 1=free(default), 2=measure length"  valueOrder="18">
+        <DisplayName>Measure Fallback</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </R>
+      <S valueType="ignore" isVisible="false" comment="loop full measure value (=1 when you have partial)"/>
+      <T valueType="ignore" isVisible="false" comment="loop partial measure (1,2,3,or 5 for sub measure parts)"/>
+      <U valueType="ignore" isVisible="false" comment="loop tempo"/>
+      <V valueType="ignore" isVisible="false" comment="loop measure length"/>
+		<W valueType="standard" isReadOnly="true" valueOrder="-1" comment="1 when there's a loop, else 0">
+			<DisplayName>WAV Recorded</DisplayName>
+			<ValueDef>YesNo</ValueDef>
+		</W>
+      <X valueType="ignore" isVisible="false" comment="loop length (x/v)=slength in bars"/>
+      <Y valueType="standard" comment="loop sync mode"  valueOrder="12">
+        <DisplayName>Loop Sync Mode</DisplayName>
+        <ValueDef>LoopSyncMode</ValueDef>
+      </Y>
+    </TRACK2>
+    <TRACK3 sectionGroupOrder="1" sectionGroup="Loop"  sectionOrder="3" section="Track 3" valueGroup="Track 3" valueGroupOrder="3" canCopyPaste="true" copyPasteScope="track" copyPasteLevel="section">
+      <A valueType="standard"  valueOrder="0">
+        <DisplayName>Reverse</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" valueOrder="1">
+        <DisplayName>1 Shot</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </B>
+      <C valueType="standard" valueOrder="2">
+        <DisplayName>Pan</DisplayName>
+        <ValueDef>Pan</ValueDef>
+      </C>
+      <D valueType="standard" valueOrder="3" broadcastKey="Track_Volume" broadcastOnChange="true">
+        <DisplayName>Play Level</DisplayName>
+        <ValueDef>Numeric0-200</ValueDef>
+      </D>
+      <E valueType="standard" valueOrder="4">
+        <DisplayName>Start Mode</DisplayName>
+        <ValueDef>StartMode</ValueDef>
+      </E>
+      <F valueType="standard" valueOrder="5">
+        <DisplayName>Stop Mode</DisplayName>
+        <ValueDef>StopMode</ValueDef>
+      </F>
+      <G valueType="standard" valueOrder="6">
+        <DisplayName>Dub Mode</DisplayName>
+        <ValueDef>DubMode</ValueDef>
+      </G>
+      <H valueType="standard" valueOrder="7">
+        <DisplayName>Fx</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </H>
+      <I valueType="standard" valueOrder="8">
+        <DisplayName>Play Mode</DisplayName>
+        <ValueDef>PlayMode</ValueDef>
+      </I>
+      <J valueType="standard" broadcastOnChange="true" broadcastKey="Track3_LoopMeasure"  valueOrder="9">
+        <DisplayName>Measure</DisplayName>
+        <ValueDef>Measure</ValueDef>
+      </J>
+      <K valueType="ignore" isVisible="false" valueOrder="10" comment="unkown">
+        <DisplayName>investigating!!!!</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </K>
+      <L valueType="standard"  valueOrder="11">
+        <DisplayName>Loop Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </L>
+      <M valueType="standard"  valueOrder="13">
+        <DisplayName>Tempo Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </M>
+      <N valueType="standard"  valueOrder="14">
+        <DisplayName>Tempo Sync Mode</DisplayName>
+        <ValueDef>TempoSyncMode</ValueDef>
+      </N>
+      <O valueType="standard"  valueOrder="15">
+        <DisplayName>Tempo Sync Speed</DisplayName>
+        <ValueDef>TempoSyncSpeed</ValueDef>
+      </O>
+      <P valueType="standard"  valueOrder="16">
+        <DisplayName>Bounce In</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </P>
+      <Q valueType="bitwise"  valueOrder="17">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Left)</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Right)</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Left)</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Right)</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </Q>
+      <R valueType="dynamic" isVisible="false" broadcastKey="Track3_LoopMeasure" comment="0,1, or 2. Original measure setting: 0=auto, 1=free(default), 2=measure length"  valueOrder="18">
+        <DisplayName>Measure Fallback</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </R>
+      <S valueType="ignore" isVisible="false" comment="loop full measure value (=1 when you have partial)"/>
+      <T valueType="ignore" isVisible="false" comment="loop partial measure (1,2,3,or 5 for sub measure parts)"/>
+      <U valueType="ignore" isVisible="false" comment="loop tempo"/>
+      <V valueType="ignore" isVisible="false" comment="loop measure length"/>
+		<W valueType="standard" isReadOnly="true" valueOrder="-1" comment="1 when there's a loop, else 0">
+			<DisplayName>WAV Recorded</DisplayName>
+			<ValueDef>YesNo</ValueDef>
+		</W>
+      <X valueType="ignore" isVisible="false" comment="loop length (x/v)=slength in bars"/>
+      <Y valueType="standard" comment="loop sync mode"  valueOrder="12">
+        <DisplayName>Loop Sync Mode</DisplayName>
+        <ValueDef>LoopSyncMode</ValueDef>
+      </Y>
+    </TRACK3>
+    <TRACK4 sectionGroupOrder="1" sectionGroup="Loop"  sectionOrder="4" section="Track 4" valueGroup="Track 4" valueGroupOrder="4"  canCopyPaste="true" copyPasteScope="track" copyPasteLevel="section">
+      <A valueType="standard"  valueOrder="0">
+        <DisplayName>Reverse</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" valueOrder="1">
+        <DisplayName>1 Shot</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </B>
+      <C valueType="standard" valueOrder="2">
+        <DisplayName>Pan</DisplayName>
+        <ValueDef>Pan</ValueDef>
+      </C>
+      <D valueType="standard" valueOrder="3" broadcastKey="Track_Volume" broadcastOnChange="true">
+        <DisplayName>Play Level</DisplayName>
+        <ValueDef>Numeric0-200</ValueDef>
+      </D>
+      <E valueType="standard" valueOrder="4">
+        <DisplayName>Start Mode</DisplayName>
+        <ValueDef>StartMode</ValueDef>
+      </E>
+      <F valueType="standard" valueOrder="5">
+        <DisplayName>Stop Mode</DisplayName>
+        <ValueDef>StopMode</ValueDef>
+      </F>
+      <G valueType="standard" valueOrder="6">
+        <DisplayName>Dub Mode</DisplayName>
+        <ValueDef>DubMode</ValueDef>
+      </G>
+      <H valueType="standard" valueOrder="7">
+        <DisplayName>Fx</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </H>
+      <I valueType="standard" valueOrder="8">
+        <DisplayName>Play Mode</DisplayName>
+        <ValueDef>PlayMode</ValueDef>
+      </I>
+      <J valueType="standard" broadcastOnChange="true" broadcastKey="Track4_LoopMeasure"  valueOrder="9">
+        <DisplayName>Measure</DisplayName>
+        <ValueDef>Measure</ValueDef>
+      </J>
+      <K valueType="ignore" isVisible="false" valueOrder="10" comment="unkown">
+        <DisplayName>investigating!!!!</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </K>
+      <L valueType="standard"  valueOrder="11">
+        <DisplayName>Loop Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </L>
+      <M valueType="standard"  valueOrder="13">
+        <DisplayName>Tempo Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </M>
+      <N valueType="standard"  valueOrder="14">
+        <DisplayName>Tempo Sync Mode</DisplayName>
+        <ValueDef>TempoSyncMode</ValueDef>
+      </N>
+      <O valueType="standard"  valueOrder="15">
+        <DisplayName>Tempo Sync Speed</DisplayName>
+        <ValueDef>TempoSyncSpeed</ValueDef>
+      </O>
+      <P valueType="standard"  valueOrder="16">
+        <DisplayName>Bounce In</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </P>
+      <Q valueType="bitwise"  valueOrder="17">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Left)</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Right)</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Left)</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Right)</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </Q>
+      <R valueType="dynamic" isVisible="false" broadcastKey="Track4_LoopMeasure" comment="0,1, or 2. Original measure setting: 0=auto, 1=free(default), 2=measure length"  valueOrder="18">
+        <DisplayName>Measure Fallback</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </R>
+      <S valueType="ignore" isVisible="false" comment="loop full measure value (=1 when you have partial)"/>
+      <T valueType="ignore" isVisible="false" comment="loop partial measure (1,2,3,or 5 for sub measure parts)"/>
+      <U valueType="ignore" isVisible="false" comment="loop tempo"/>
+      <V valueType="ignore" isVisible="false" comment="loop measure length"/>
+		<W valueType="standard" isReadOnly="true" valueOrder="-1" comment="1 when there's a loop, else 0">
+			<DisplayName>WAV Recorded</DisplayName>
+			<ValueDef>YesNo</ValueDef>
+		</W>
+      <X valueType="ignore" isVisible="false" comment="loop length (x/v)=slength in bars"/>
+      <Y valueType="standard" comment="loop sync mode"  valueOrder="12">
+        <DisplayName>Loop Sync Mode</DisplayName>
+        <ValueDef>LoopSyncMode</ValueDef>
+      </Y>
+    </TRACK4>
+    <TRACK5 sectionGroupOrder="1" sectionGroup="Loop" sectionOrder="5" section="Track 5" valueGroup="Track 5" valueGroupOrder="5" canCopyPaste="true" copyPasteScope="track" copyPasteLevel="section">
+      <A valueType="standard"  valueOrder="0">
+        <DisplayName>Reverse</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" valueOrder="1">
+        <DisplayName>1 Shot</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </B>
+      <C valueType="standard" valueOrder="2">
+        <DisplayName>Pan</DisplayName>
+        <ValueDef>Pan</ValueDef>
+      </C>
+      <D valueType="standard" valueOrder="3" broadcastKey="Track_Volume" broadcastOnChange="true">
+        <DisplayName>Play Level</DisplayName>
+        <ValueDef>Numeric0-200</ValueDef>
+      </D>
+      <E valueType="standard" valueOrder="4">
+        <DisplayName>Start Mode</DisplayName>
+        <ValueDef>StartMode</ValueDef>
+      </E>
+      <F valueType="standard" valueOrder="5">
+        <DisplayName>Stop Mode</DisplayName>
+        <ValueDef>StopMode</ValueDef>
+      </F>
+      <G valueType="standard" valueOrder="6">
+        <DisplayName>Dub Mode</DisplayName>
+        <ValueDef>DubMode</ValueDef>
+      </G>
+      <H valueType="standard" valueOrder="7">
+        <DisplayName>Fx</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </H>
+      <I valueType="standard" valueOrder="8">
+        <DisplayName>Play Mode</DisplayName>
+        <ValueDef>PlayMode</ValueDef>
+      </I>
+      <J valueType="standard" broadcastOnChange="true" broadcastKey="Track5_LoopMeasure"  valueOrder="9">
+        <DisplayName>Measure</DisplayName>
+        <ValueDef>Measure</ValueDef>
+      </J>
+      <K valueType="ignore" isVisible="false" valueOrder="10" comment="unkown">
+        <DisplayName>investigating!!!!</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </K>
+      <L valueType="standard"  valueOrder="11">
+        <DisplayName>Loop Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </L>
+      <M valueType="standard"  valueOrder="13">
+        <DisplayName>Tempo Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </M>
+      <N valueType="standard"  valueOrder="14">
+        <DisplayName>Tempo Sync Mode</DisplayName>
+        <ValueDef>TempoSyncMode</ValueDef>
+      </N>
+      <O valueType="standard"  valueOrder="15">
+        <DisplayName>Tempo Sync Speed</DisplayName>
+        <ValueDef>TempoSyncSpeed</ValueDef>
+      </O>
+      <P valueType="standard"  valueOrder="16">
+        <DisplayName>Bounce In</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </P>
+      <Q valueType="bitwise"  valueOrder="17">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Left)</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Right)</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Left)</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Right)</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </Q>
+      <R valueType="dynamic" isVisible="false" broadcastKey="Track5_LoopMeasure" comment="0,1, or 2. Original measure setting: 0=auto, 1=free(default), 2=measure length"  valueOrder="18">
+        <DisplayName>Measure Fallback</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </R>
+      <S valueType="ignore" isVisible="false" comment="loop full measure value (=1 when you have partial)"/>
+      <T valueType="ignore" isVisible="false" comment="loop partial measure (1,2,3,or 5 for sub measure parts)"/>
+      <U valueType="ignore" isVisible="false" comment="loop tempo"/>
+      <V valueType="ignore" isVisible="false" comment="loop measure length"/>
+		<W valueType="standard" isReadOnly="true" valueOrder="-1" comment="1 when there's a loop, else 0">
+			<DisplayName>WAV Recorded</DisplayName>
+			<ValueDef>YesNo</ValueDef>
+		</W>
+      <X valueType="ignore" isVisible="false" comment="loop length (x/v)=slength in bars"/>
+      <Y valueType="standard" comment="loop sync mode"  valueOrder="12">
+        <DisplayName>Loop Sync Mode</DisplayName>
+        <ValueDef>LoopSyncMode</ValueDef>
+      </Y>
+    </TRACK5>
+    <TRACK6 sectionGroupOrder="1" sectionGroup="Loop" sectionOrder="6" section="Track 6" valueGroup="Track 6" valueGroupOrder="6" canCopyPaste="true" copyPasteScope="track" copyPasteLevel="section">
+      <A valueType="standard"  valueOrder="0">
+        <DisplayName>Reverse</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" valueOrder="1">
+        <DisplayName>1 Shot</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </B>
+      <C valueType="standard" valueOrder="2">
+        <DisplayName>Pan</DisplayName>
+        <ValueDef>Pan</ValueDef>
+      </C>
+      <D valueType="standard" valueOrder="3" broadcastKey="Track_Volume" broadcastOnChange="true">
+        <DisplayName>Play Level</DisplayName>
+        <ValueDef>Numeric0-200</ValueDef>
+      </D>
+      <E valueType="standard" valueOrder="4">
+        <DisplayName>Start Mode</DisplayName>
+        <ValueDef>StartMode</ValueDef>
+      </E>
+      <F valueType="standard" valueOrder="5">
+        <DisplayName>Stop Mode</DisplayName>
+        <ValueDef>StopMode</ValueDef>
+      </F>
+      <G valueType="standard" valueOrder="6">
+        <DisplayName>Dub Mode</DisplayName>
+        <ValueDef>DubMode</ValueDef>
+      </G>
+      <H valueType="standard" valueOrder="7">
+        <DisplayName>Fx</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </H>
+      <I valueType="standard" valueOrder="8">
+        <DisplayName>Play Mode</DisplayName>
+        <ValueDef>PlayMode</ValueDef>
+      </I>
+      <J valueType="standard" broadcastOnChange="true" broadcastKey="Track6_LoopMeasure"  valueOrder="9">
+        <DisplayName>Measure</DisplayName>
+        <ValueDef>Measure</ValueDef>
+      </J>
+      <K valueType="ignore" isVisible="false" valueOrder="10" comment="unkown">
+        <DisplayName>investigating!!!!</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </K>
+      <L valueType="standard"  valueOrder="11">
+        <DisplayName>Loop Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </L>
+      <M valueType="standard"  valueOrder="13">
+        <DisplayName>Tempo Sync</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </M>
+      <N valueType="standard"  valueOrder="14">
+        <DisplayName>Tempo Sync Mode</DisplayName>
+        <ValueDef>TempoSyncMode</ValueDef>
+      </N>
+      <O valueType="standard"  valueOrder="15">
+        <DisplayName>Tempo Sync Speed</DisplayName>
+        <ValueDef>TempoSyncSpeed</ValueDef>
+      </O>
+      <P valueType="standard"  valueOrder="16">
+        <DisplayName>Bounce In</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </P>
+      <Q valueType="bitwise"  valueOrder="17">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Left)</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 (Right)</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Left)</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 (Right)</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+<!-- lines 1108-2169 from rc600_database_block_2.xml -->
+    <ICTL1_PEDAL1 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 1</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+         <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction"  systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL1>
+    <ICTL1_PEDAL2 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction"  systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 2</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL2>
+    <ICTL1_PEDAL3 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 3</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction"  systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL3>
+    <ICTL1_PEDAL4 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 4</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction"  systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL4>
+    <ICTL1_PEDAL5 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 5</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL5>
+    <ICTL1_PEDAL6 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 6</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL6>
+    <ICTL1_PEDAL7 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 7</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL7>
+    <ICTL1_PEDAL8 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 8</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL8>
+    <ICTL1_PEDAL9 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 1" sectionOrder="1" valueGroup="Mode 1" valueGroupOrder="1" systemKey="MODE1">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE1" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 9</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL1_PEDAL9>
+    <ICTL2_PEDAL1 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 1</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL1>
+    <ICTL2_PEDAL2 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 2</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL2>
+    <ICTL2_PEDAL3 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 3</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL3>
+    <ICTL2_PEDAL4 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 4</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL4>
+    <ICTL2_PEDAL5 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 5</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL5>
+    <ICTL2_PEDAL6 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 6</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL6>
+    <ICTL2_PEDAL7 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 7</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL7>
+    <ICTL2_PEDAL8 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 8</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL8>
+    <ICTL2_PEDAL9 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 2" sectionOrder="2" valueGroup="Mode 2" valueGroupOrder="2" systemKey="MODE2">
+      <A valueType="standard" comment="Pedal Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE2" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 9</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL2_PEDAL9>
+    <ICTL3_PEDAL1 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 1 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 1</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL1>
+    <ICTL3_PEDAL2 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 2 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 2</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL2>
+    <ICTL3_PEDAL3 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 3 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 3</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL3>
+    <ICTL3_PEDAL4 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 4 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 4</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL4>
+    <ICTL3_PEDAL5 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 5 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 5</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL5>
+    <ICTL3_PEDAL6 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 6 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 6</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL6>
+    <ICTL3_PEDAL7 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 7 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 7</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL7>
+    <ICTL3_PEDAL8 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 8 Function" broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 8</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL8>
+    <ICTL3_PEDAL9 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Pedals: Mode 3" sectionOrder="3" valueGroup="Mode 3" valueGroupOrder="3" systemKey="MODE3">
+      <A valueType="standard" comment="Pedal 9 Function"  broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="MODE3" canCopyPaste="true" copyPasteScope="pedal">
+        <DisplayName>Pedal 9</DisplayName>
+        <ValueDef>PedalFunc</ValueDef>
+      </A>
+      <B valueType="dynamic" comment="needs to show valid min max (else hidden)" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" comment="max value needs to = zero when A=0, else should be the max of the lookup provided" broadcastKey="PedalFunction" systemKey="MODE3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+    </ICTL3_PEDAL9>
+    <ECTL_CTL1 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Ext Ctrl" sectionOrder="4" valueGroup="Ext Controllers" valueGroupOrder="4" systemKey="CTL1">
+      <A valueType="standard" comment="External Ctrl 1 Function"  broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="CTL1" canCopyPaste="true" copyPasteScope="external controller">
+        <DisplayName>External Ctrl 1</DisplayName>
+        <ValueDef>CtrlFunc</ValueDef>
+      </A>
+      <B valueType="ignore" isVisible="false" systemKey="CTL1">
+        <DisplayName>B (ignore used by RC-505mk2)</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic"  broadcastKey="PedalFunction" systemKey="CTL1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+      <D valueType="dynamic" broadcastKey="PedalFunction" systemKey="CTL1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </D>
+    </ECTL_CTL1>
+    <ECTL_CTL2 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Ext Ctrl" sectionOrder="4" valueGroup="Ext Controllers" valueGroupOrder="4" systemKey="CTL2" >
+      <A valueType="standard" comment="External Ctrl 2 Function"  broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="CTL2" canCopyPaste="true" copyPasteScope="external controller">
+        <DisplayName>External Ctrl 2</DisplayName>
+        <ValueDef>CtrlFunc</ValueDef>
+      </A>
+     <B valueType="ignore" isVisible="false" systemKey="CTL2">
+        <DisplayName>B (ignore used by RC-505mk2)</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic"  broadcastKey="PedalFunction" systemKey="CTL2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+      <D valueType="dynamic" broadcastKey="PedalFunction" systemKey="CTL2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </D>
+    </ECTL_CTL2>
+    <ECTL_CTL3 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Ext Ctrl" sectionOrder="4" valueGroup="Ext Controllers" valueGroupOrder="4" systemKey="CTL3">
+      <A valueType="standard" comment="External Ctrl 3 Function"  broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="CTL3" canCopyPaste="true" copyPasteScope="external controller">
+        <DisplayName>External Ctrl 3</DisplayName>
+        <ValueDef>CtrlFunc</ValueDef>
+      </A>
+     <B valueType="ignore" isVisible="false" systemKey="CTL3">
+        <DisplayName>B (ignore used by RC-505mk2)</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic"  broadcastKey="PedalFunction" systemKey="CTL3">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+      <D valueType="dynamic" broadcastKey="PedalFunction" systemKey="CTL3">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </D>
+    </ECTL_CTL3>
+    <ECTL_CTL4 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Ext Ctrl" sectionOrder="4" valueGroup="Ext Controllers" valueGroupOrder="4" systemKey="CTL4">
+      <A valueType="standard" comment="External Ctrl 4 Function"  broadcastOnChange="true" broadcastKey="PedalFunction" systemKey="CTL4" canCopyPaste="true" copyPasteScope="external controller">
+        <DisplayName>External Ctrl 4</DisplayName>
+        <ValueDef>CtrlFunc</ValueDef>
+      </A>
+     <B valueType="ignore" isVisible="false" systemKey="CTL4">
+        <DisplayName>B (ignore used by RC-505mk2)</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic"  broadcastKey="PedalFunction" systemKey="CTL4">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+      <D valueType="dynamic" broadcastKey="PedalFunction" systemKey="CTL4">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </D>
+    </ECTL_CTL4>
+    <ECTL_EXP1 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Ext Ctrl" sectionOrder="4" valueGroup="Ext Controllers" valueGroupOrder="4" systemKey="EXP1">
+      <A valueType="standard" comment="Expression 1 Function"  broadcastOnChange="true" broadcastKey="ExpFunction"  systemKey="EXP1"  canCopyPaste="true" copyPasteScope="expression pedal">
+        <DisplayName>Expression 1</DisplayName>
+        <ValueDef>ExpFunc</ValueDef>
+      </A>
+     <B valueType="ignore" isVisible="false" systemKey="EXP1">
+        <DisplayName>B (ignore used by RC-505mk2)</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" lookUpPrefix="Range_" broadcastKey="ExpFunction" systemKey="EXP1">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+      <D valueType="dynamic" lookUpPrefix="Range_" broadcastKey="ExpFunction" systemKey="EXP1">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </D>
+    </ECTL_EXP1>
+    <ECTL_EXP2 sectionGroupOrder="3" sectionGroup="Ctl Func" section="Ext Ctrl" sectionOrder="4" valueGroup="Ext Controllers" valueGroupOrder="4" systemKey="EXP2">
+      <A valueType="standard" comment="Expression 1 Function"  broadcastOnChange="true" broadcastKey="ExpFunction" systemKey="EXP2" canCopyPaste="true" copyPasteScope="expression pedal">
+        <DisplayName>Expression 2</DisplayName>
+        <ValueDef>ExpFunc</ValueDef>
+      </A>
+      <B valueType="ignore" isVisible="false" systemKey="EXP2">
+        <DisplayName>B (ignore used by RC-505mk2)</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </B>
+      <C valueType="dynamic" lookUpPrefix="Range_" broadcastKey="ExpFunction" systemKey="EXP2">
+        <DisplayName>      Min</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </C>
+      <D valueType="dynamic" lookUpPrefix="Range_" broadcastKey="ExpFunction" systemKey="EXP2">
+        <DisplayName>      Max</DisplayName>
+        <ValueDef>Default</ValueDef>
+      </D>
+    </ECTL_EXP2>
+    <ASSIGN1 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 1" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+     <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN1_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>  
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E  valueType="dynamic" broadcastKey="ASSIGN1_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN1_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN1_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN1_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN1_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN1>
+    <ASSIGN2 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 2" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN2_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN2_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN2_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN2_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN2_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN2_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN2>
+    <ASSIGN3 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 3" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN3_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN3_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN3_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN3_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN3_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN3_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN3>
+    <ASSIGN4  sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 4" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN4_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN4_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN4_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN4_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN4_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN4_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN4>
+    <ASSIGN5 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 5" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN5_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN5_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN5_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN5_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN5_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN5_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN5>
+    <ASSIGN6  sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 6" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN6_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN6_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN6_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN6_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN6_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN6_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN6>
+    <ASSIGN7 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 7" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN7_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN7_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN7_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN7_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN7_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN7_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN7>
+    <ASSIGN8 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 8" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN8_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN8_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN8_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN8_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN8_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN8_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN8>
+    <ASSIGN9 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 9" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN9_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN9_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN9_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN9_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN9_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN9_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN9>
+    <ASSIGN10 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 10" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN10_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN10_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN10_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN10_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN10_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN10_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN10>
+    <ASSIGN11 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 11" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN11_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN11_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN11_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN11_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN11_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN11_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN11>
+    <ASSIGN12 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 12" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN12_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN12_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN12_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN12_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN12_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN12_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN12>
+    <ASSIGN13 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 13" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN13_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN13_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN13_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN13_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN13_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN13_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN13>
+    <ASSIGN14 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 14" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN14_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN14_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN14_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN14_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN14_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN14_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN14>
+    <ASSIGN15 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 15" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN15_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN15_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN15_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN15_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN15_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN15_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN15>
+    <ASSIGN16 sectionGroupOrder="7" sectionGroup="Assigns" section="Assign 16" canCopyPaste="true" copyPasteScope="assign" copyPasteLevel="section">
+      <A valueType="standard" broadcastKey="Assign_Switch" broadcastOnChange="true">
+        <DisplayName>Switch</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </A>
+      <B valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN16_Action.Source">
+        <DisplayName>Action.Source</DisplayName>
+        <ValueDef>AssignActionSource</ValueDef>
+      </B>
+      <C>0</C>
+      <D valueType="standard">
+        <DisplayName>Mode</DisplayName>
+        <ValueDef>ToggleMode</ValueDef>
+      </D>
+      <E valueType="dynamic" broadcastKey="ASSIGN16_Action.Source">
+        <DisplayName>Act.Low</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </E>
+      <F valueType="dynamic" broadcastKey="ASSIGN16_Action.Source">
+        <DisplayName>Act.High</DisplayName>
+        <ValueDef>Numeric0-127</ValueDef>
+      </F>
+      <G valueType="standard" broadcastOnChange="true" broadcastKey="ASSIGN16_Target.Source">
+        <DisplayName>Target.Source</DisplayName>
+        <ValueDef>AssignTargetSource</ValueDef>
+      </G>
+      <H>0</H>
+      <I valueType="dynamic" broadcastKey="ASSIGN16_Target.Source">
+        <DisplayName>      Target.Low</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </I>
+      <J valueType="dynamic" broadcastKey="ASSIGN16_Target.Source">
+        <DisplayName>      Target.High</DisplayName>
+        <ValueDef>Numeric0-255</ValueDef>
+      </J>
+    </ASSIGN16>
+<!-- lines 2243-2699 from rc600_database_block_2.xml -->
+    <ROUTING sectionGroupOrder="9" sectionGroup="Output" sectionOrder="2" section="Routing:Track" valueGroup="Main Left" valueGroupOrder="1">
+      <A valueType="bitwise" sectionOrder="2" section="Routing:Track" valueGroup="Main Left" valueGroupOrder="1" systemKey="MAIN">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Track 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 3</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 4</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 5</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 6</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </A>
+      <B valueType="bitwise" sectionOrder="2" section="Routing:Track" valueGroup="Main Right" valueGroupOrder="2" systemKey="MAIN">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Track 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 3</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 4</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 5</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 6</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </B>
+      <C valueType="bitwise" sectionOrder="2" section="Routing:Track" valueGroup="Sub1 Left" valueGroupOrder="3" systemKey="SUB1">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Track 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 3</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 4</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 5</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 6</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </C>
+      <D valueType="bitwise" sectionOrder="2" section="Routing:Track" valueGroup="Sub1 Right" valueGroupOrder="4" systemKey="SUB1">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Track 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 3</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 4</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 5</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 6</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </D>
+      <E valueType="bitwise" sectionOrder="2" section="Routing:Track" valueGroup="Sub2 Left" valueGroupOrder="5" systemKey="SUB2">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Track 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 3</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 4</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 5</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 6</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </E>
+      <F valueType="bitwise" sectionOrder="2" section="Routing:Track" valueGroup="Sub2 Right" valueGroupOrder="6" systemKey="SUB2">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Track 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 3</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 4</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 5</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Track 6</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </F>
+      <!-- G Track Phones is only visible when Phones Out (R) = Individual -->
+      <G valueType="bitwise" sectionOrder="2" section="Routing:Track" valueGroup="Phones" valueGroupOrder="7" systemKey="PHONES">
+        <ValueCollection>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Track 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Track 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Track 3</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Track 4</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Track 5</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Track 6</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </G>
+      <H valueType="bitwise" sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Main Left" valueGroupOrder="1" systemKey="MAIN">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Left</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Right</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Left</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Right</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </H>
+      <I valueType="bitwise" sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Main Right" valueGroupOrder="2" systemKey="MAIN">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Left</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Right</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Left</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Right</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </I>
+      <J valueType="bitwise"  sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Sub1 Left" valueGroupOrder="3" systemKey="SUB1">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Left</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Right</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Left</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Right</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </J>
+      <K valueType="bitwise"  sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Sub1 Right" valueGroupOrder="4" systemKey="SUB1">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Left</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Right</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Left</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Right</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </K>
+      <L valueType="bitwise"  sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Sub2 Left" valueGroupOrder="5" systemKey="SUB2">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Left</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Right</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Left</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Right</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </L>
+      <M valueType="bitwise" sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Sub2 Right" valueGroupOrder="6" systemKey="SUB2">
+        <ValueCollection>
+          <ValueItem>
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Left</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 1 Right</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Left</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Inst 2 Right</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem>
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </M>
+      <!-- N Phones Routing is only visible when Phones Out (R) = Individual -->
+      <N valueType="bitwise"  sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Phones" valueGroupOrder="7" systemKey="PHONES">
+        <ValueCollection>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Mic 1</DisplayName>
+            <ValueDef>Bitwise1</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Mic 2</DisplayName>
+            <ValueDef>Bitwise2</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Inst 1 Left</DisplayName>
+            <ValueDef>Bitwise4</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Inst 1 Right</DisplayName>
+            <ValueDef>Bitwise8</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Inst 2 Left</DisplayName>
+            <ValueDef>Bitwise16</ValueDef>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Inst 2 Right</DisplayName>
+            <ValueDef>Bitwise32</ValueDef>
+            <IsVisible>True</IsVisible>
+          </ValueItem>
+          <ValueItem broadcastKey="PhonesOut" broadcastArgument="show:Individual">
+            <DisplayName>Rhythm</DisplayName>
+            <ValueDef>Bitwise64</ValueDef>
+          </ValueItem>
+        </ValueCollection>
+      </N>
+      <O valueType="standard"  sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Rhythm" valueGroupOrder="8" systemKey="RHYTHM" valueOrder="99">
+        <DisplayName>Rhythm Out</DisplayName>
+        <ValueDef>RhythmOut</ValueDef>
+      </O>
+      <!-- P Phones Monitor is only visible when Phones Out (R) = Individual -->
+      <P valueType="standard" sectionGroupOrder="9" sectionGroup="Output" sectionOrder="4" section="Routing:Phones Out" valueGroup="Phones Out" valueGroupOrder="1" valueOrder="2" broadcastKey="PhonesOut" systemKey="PHONES">
+        <DisplayName>Phones Monitor</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </P>
+      <!-- Q Phones Rhythm is only visible when Phones Out (R) != Individual -->
+      <Q valueType="standard" sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Rhythm" valueGroupOrder="8" valueOrder="98" broadcastKey="PhonesOut">
+        <DisplayName>Phones Rhythm</DisplayName>
+        <ValueDef>Switch</ValueDef>
+      </Q>
+      <R valueType="standard" sectionGroupOrder="9" sectionGroup="Output" sectionOrder="4" section="Routing:Phones Out" valueGroup="Phones Out" valueGroupOrder="1" valueOrder="1"  broadcastOnChange="true" broadcastKey="PhonesOut" systemKey="PHONES">
+        <DisplayName>Phones Out</DisplayName>
+        <ValueDef>PhonesOut</ValueDef>
+      </R>
+      <S valueType="standard"  sectionGroupOrder="9" sectionGroup="Output" sectionOrder="3" section="Routing:Input/Rhythm" valueGroup="Rhythm" valueGroupOrder="8" valueOrder="100" >
+        <DisplayName>Input Thru</DisplayName>
