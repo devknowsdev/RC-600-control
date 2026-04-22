@@ -1,0 +1,293 @@
+{
+  "artifact_type": "crosswalk_candidate_inference_only",
+  "generated_at_utc": "2026-04-22",
+  "source_hierarchy": [
+    "official_docs",
+    "uploaded_rc0_xml",
+    "repo_schema_frontmatter",
+    "style_refs"
+  ],
+  "source_availability": {
+    "official_docs": {
+      "status": "missing_in_workspace",
+      "note": "No uploaded official RC-600 docs were found in this repo snapshot."
+    },
+    "uploaded_rc0_xml": {
+      "status": "missing_in_workspace",
+      "note": "No uploaded RC0/XML files were found in this repo snapshot."
+    },
+    "repo_schema_frontmatter": {
+      "status": "missing_in_workspace",
+      "note": "No schema/frontmatter rule files were found in this repo snapshot."
+    },
+    "style_refs": {
+      "status": "not_used_for_semantics"
+    }
+  },
+  "domains": {
+    "ROUTING": {
+      "claims": [
+        {
+          "claim_id": "ROUTING-APP-001",
+          "claim": "Routing schema appears split into Track routing and Input/Rhythm routing with shared output bus groups Main/Sub1/Sub2/Phones.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "high",
+              "evidence_points": [
+                "section=\"Routing:Track\"",
+                "section=\"Routing:Input/Rhythm\"",
+                "valueGroup=\"Main Left|Main Right|Sub1 Left|Sub1 Right|Sub2 Left|Sub2 Right|Phones\""
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        },
+        {
+          "claim_id": "ROUTING-APP-002",
+          "claim": "Track output membership uses bitwise flags Track1..Track6 for each output bus group.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "high",
+              "evidence_points": [
+                "DisplayName Track 1..Track 6",
+                "ValueDef Bitwise1/2/4/8/16/32 under Routing:Track"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        },
+        {
+          "claim_id": "ROUTING-APP-003",
+          "claim": "Input/Rhythm routing bitwise set includes Mic1/Mic2/Inst1L/Inst1R/Inst2L/Inst2R/Rhythm; additional controls include Rhythm Out, Phones Monitor, Phones Rhythm, Phones Out, Input Thru.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly_and_existing_index",
+              "confidence": "high",
+              "evidence_points": [
+                "DisplayName Mic 1..Rhythm with Bitwise1..Bitwise64",
+                "DisplayName Rhythm Out / Phones Monitor / Phones Rhythm / Phones Out / Input Thru"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        }
+      ]
+    },
+    "TRACK": {
+      "focus": "input_source_bitwise_structure",
+      "claims": [
+        {
+          "claim_id": "TRACK-APP-001",
+          "claim": "Each track section exposes copy/paste at track-scope section-level.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "high",
+              "evidence_points": [
+                "TRACK1..TRACK6 carry canCopyPaste=true copyPasteScope=track copyPasteLevel=section"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        },
+        {
+          "claim_id": "TRACK-APP-002",
+          "claim": "Track input-source style bitwise structure appears under Bounce In with flags Mic1/Mic2/Inst1L/Inst1R/Inst2L/Inst2R/Rhythm mapped to Bitwise1..64.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly_and_existing_index",
+              "confidence": "high",
+              "evidence_points": [
+                "DisplayName Bounce In",
+                "DisplayName Mic 1..Rhythm with ValueDef Bitwise1..Bitwise64"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        },
+        {
+          "claim_id": "TRACK-APP-003",
+          "claim": "Track field set includes Reverse, 1 Shot, Pan, Play Level, Start Mode, Stop Mode, Dub Mode, Fx, Play Mode, Measure, Loop Sync, Tempo Sync(+mode/speed).",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_plus_parameter_help_json",
+              "confidence": "medium",
+              "evidence_points": [
+                "RC600ParameterHelp Track section labels",
+                "compiled section fields in app index"
+              ]
+            }
+          },
+          "resolution": "partially_resolved_labels_only"
+        }
+      ]
+    },
+    "ASSIGN": {
+      "claims": [
+        {
+          "claim_id": "ASSIGN-APP-001",
+          "claim": "Assign blocks are replicated as Assign 1..Assign 16 with assign-scoped copy/paste at section level.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "high",
+              "evidence_points": [
+                "ASSIGN1..ASSIGN16",
+                "copyPasteScope=assign copyPasteLevel=section"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        },
+        {
+          "claim_id": "ASSIGN-APP-002",
+          "claim": "Assign field structure candidate: Switch, Action.Source, Mode, Act.Low, Act.High, Target.Source, Target.Low, Target.High.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "high",
+              "evidence_points": [
+                "ValueDef Switch/AssignActionSource/ToggleMode/Numeric0-127/AssignTargetSource/Numeric0-255"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        }
+      ]
+    },
+    "CTL_FUNC": {
+      "claims": [
+        {
+          "claim_id": "CTL-APP-001",
+          "claim": "Pedal control structure appears grouped by Pedals: Mode 1/2/3 with Pedal 1..9 entries and Min/Max dynamic range fields.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "high",
+              "evidence_points": [
+                "ICTL1/2/3_PEDAL1..9",
+                "ValueDef PedalFunc + Min/Max dynamic fields",
+                "copyPasteScope=pedal"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        },
+        {
+          "claim_id": "CTL-APP-002",
+          "claim": "External controller structure appears as CTL1..CTL4 and EXP1..EXP2 with function plus Min/Max dynamic range fields.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "high",
+              "evidence_points": [
+                "ECTL_CTL1..4 use ValueDef CtrlFunc",
+                "ECTL_EXP1..2 use ValueDef ExpFunc",
+                "copyPasteScope external controller/expression pedal"
+              ]
+            }
+          },
+          "resolution": "unresolved_pending_official_and_rc0_validation"
+        },
+        {
+          "claim_id": "CTL-APP-003",
+          "claim": "A hidden/ignored B-field is present in ECTL/EXP blocks with label text referencing RC-505mk2; this should not be treated as RC-600 semantic inheritance.",
+          "support": {
+            "official_docs": {
+              "status": "unverified_no_source"
+            },
+            "rc0_xml": {
+              "status": "unverified_no_source"
+            },
+            "app_bundle": {
+              "status": "supported",
+              "evidence_class": "compiled_xml_strings_from_app_assembly",
+              "confidence": "medium",
+              "evidence_points": [
+                "DisplayName \"B (ignore used by RC-505mk2)\" with valueType=ignore isVisible=false"
+              ]
+            }
+          },
+          "resolution": "guardrail_note_not_a_mapping"
+        }
+      ]
+    }
+  },
+  "unresolved_global": [
+    "No canonical official-doc citations can be added until docs are present in workspace.",
+    "No RC0/XML-backed key mapping can be asserted until uploaded RC0/XML files are available.",
+    "A/B/C leaf-key positions in embedded templates remain non-canonical without RC0/XML corroboration."
+  ]
+}
