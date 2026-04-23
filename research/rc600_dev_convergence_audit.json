@@ -1,0 +1,108 @@
+{
+  "artifact_type": "rc600_dev_convergence_audit",
+  "benchmark_basis": [
+    "research/rc600_claim_validation.json",
+    "research/sources/rc600_rc0xml_validation_excerpt.xml",
+    "research/rc600_app_bundle_schema_index.json"
+  ],
+  "repo_observation": {
+    "summary": "Current repository snapshot contains research artifacts and bundled binary assets; no explicit first-party RC-600 Dev schema/UI/state source modules were discovered in this tree.",
+    "implication": "Convergence can only be scored against represented model artifacts, not against implemented planner/editor runtime behavior in source code."
+  },
+  "overall_assessment": {
+    "verdict": "still_too_shallow_for_reliable_planner_editor",
+    "why": [
+      "Validated structural model exists in research artifacts, but it is not yet operationalized into explicit editable state schemas and planning workflows in this repo snapshot.",
+      "Domain coverage is captured as evidence/claims, not as enforceable app-level model constraints."
+    ]
+  },
+  "domains": {
+    "ROUTING": {
+      "already_modeled_correctly": [
+        "Validated model captures Track-vs-Input/Rhythm split and output bus families.",
+        "Validated model captures Track 1..6 and Mic/Inst/Rhythm member sets."
+      ],
+      "missing": [
+        "No explicit planner data model for per-memory routing matrices with conditional phones behavior.",
+        "No source-visible state transitions/rules for destination routing edits."
+      ],
+      "oversimplified": [
+        "Current representation is claim/evidence text, not editable matrix state with validation constraints."
+      ],
+      "wrong_abstraction_level": [
+        "Evidence-level statements are being used where domain-level state schema should exist (memory -> routing tables -> destinations)."
+      ],
+      "smallest_corrective_next_step": "Define a minimal routing state schema (MemoryRouting) with explicit groups: routing_track and routing_input_rhythm; include destination keys MAIN/SUB1/SUB2/PHONES and member enums validated from current evidence."
+    },
+    "TRACK_BOUNCE_IN": {
+      "already_modeled_correctly": [
+        "Bounce In source set and bitwise-like member structure are validated in docs+XML evidence."
+      ],
+      "missing": [
+        "No explicit per-track input-source model in app state (source selection, toggle set, serialization intent).",
+        "No planner semantics for cross-track dependency checks during bounce planning."
+      ],
+      "oversimplified": [
+        "Bounce In appears as a single claim rather than a typed TrackInputSourceSet with constraints."
+      ],
+      "wrong_abstraction_level": [
+        "Field-level evidence exists without corresponding track-level planning object."
+      ],
+      "smallest_corrective_next_step": "Add a TrackInputSourceSet type with members {mic1,mic2,inst1L,inst1R,inst2L,inst2R,rhythm} and attach it to each track plan entry; store an explicit 'encoding_pending' flag instead of asserting canonical bit packing."
+    },
+    "ASSIGN": {
+      "already_modeled_correctly": [
+        "ASSIGN1..16 and core field family are validated."
+      ],
+      "missing": [
+        "No explicit assign-bank structure with 16 slots in planner state.",
+        "No source-visible validation of source/target range compatibility (act low/high vs target low/high)."
+      ],
+      "oversimplified": [
+        "Assign structure is represented textually; no typed slot schema enforcing required fields."
+      ],
+      "wrong_abstraction_level": [
+        "Evidence and UI labels are standing in for domain rules (assign automation intent + value bounds)."
+      ],
+      "smallest_corrective_next_step": "Implement an AssignSlot schema (x16) with required fields: switch, source, mode, act_low, act_high, target, target_low, target_high; add lightweight invariant checks and leave unresolved fields explicitly nullable."
+    },
+    "CTL_FUNC": {
+      "already_modeled_correctly": [
+        "Pedal Mode1/2/3 with Pedal1..9 structure is validated.",
+        "External CTL1..4 and EXP1/2 function + min/max structure is validated."
+      ],
+      "missing": [
+        "No explicit control-surface planning model that separates internal pedal modes from external/expression controls.",
+        "No rule layer for mode-switch implications across planned memories."
+      ],
+      "oversimplified": [
+        "CTL function coverage is flattened into claims; not represented as mode-indexed control maps."
+      ],
+      "wrong_abstraction_level": [
+        "Guardrail notes (e.g., RC-505 compatibility field) are mixed near semantic structure instead of isolated compatibility metadata."
+      ],
+      "smallest_corrective_next_step": "Create ControlPlan model with sub-objects: pedal_modes[1..3][pedal1..9], ext_ctrl[ctl1..4], expression[exp1..2], and a separate compatibility_metadata bucket for ignored fields."
+    },
+    "SET_MEMORY_PLANNING": {
+      "already_modeled_correctly": [
+        "Evidence set is memory-oriented (routing, track, assign, ctl) and can seed memory-plan composition."
+      ],
+      "missing": [
+        "No canonical memory-plan aggregate object combining ROUTING + TRACK + ASSIGN + CTL into one editable unit.",
+        "No staged planner workflow (draft -> validate -> export-ready) visible in source artifacts."
+      ],
+      "oversimplified": [
+        "Current outputs are static audit/claim artifacts, not planner state with diffable revisions."
+      ],
+      "wrong_abstraction_level": [
+        "Project currently emphasizes extraction evidence over planning operations (scenario design, conflict detection, memory set sequencing)."
+      ],
+      "smallest_corrective_next_step": "Introduce a MemoryPlan aggregate schema and a JSON fixture set (3-5 representative memories) that exercises routing/track/assign/ctl interactions; use this as the first executable planning surface before any UI expansion."
+    }
+  },
+  "staged_execution_order": [
+    "1) Add typed state schemas for routing, track input set, assign slots, and ctl plan.",
+    "2) Add fixture-driven validation rules and diff output for MemoryPlan.",
+    "3) Only then expose/edit via UI controls domain-by-domain (Routing -> Assign -> Ctl -> Track bounce)."
+  ]
+}

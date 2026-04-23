@@ -1,0 +1,319 @@
+{
+  "artifact_type": "rc600_repo_action_plan",
+  "source_precedence": [
+    "official_docs",
+    "uploaded_rc0_xml",
+    "repo_schema_frontmatter",
+    "style_refs"
+  ],
+  "benchmark_policy": "working_rc_editor_as_benchmark_not_canonical",
+  "A_proposed_workstream_list": [
+    {
+      "id": "WS1",
+      "name": "Core domain schema/state convergence",
+      "stage": "Stage 1",
+      "scope": ["ROUTING", "TRACK Bounce In", "ASSIGN", "CTL FUNC"]
+    },
+    {
+      "id": "WS2",
+      "name": "Validation confidence and comparison tooling",
+      "stage": "Stage 2",
+      "scope": ["fixtures", "diff tooling", "baseline/default memory comparisons", "controlled change comparisons"]
+    },
+    {
+      "id": "WS3",
+      "name": "Planner-first UX layering",
+      "stage": "Stage 3",
+      "scope": ["memory overview", "set overview", "routing/control summaries", "planner editing flow"]
+    }
+  ],
+  "B_ordered_increments": [
+    {
+      "id": "INC-001",
+      "stage": "Stage 1",
+      "name": "Introduce typed RC-600 planner core skeleton",
+      "objective": "Create a minimal, typed planner-core package boundary so domain models can be added incrementally without UI coupling.",
+      "likely_files": [
+        "src/planner_core/__init__.py",
+        "src/planner_core/types.py",
+        "src/planner_core/memory_plan.py",
+        "docs/rc600/model_boundaries.md"
+      ],
+      "impact": {
+        "schema": "adds root MemoryPlan and shared scalar/enums placeholders",
+        "state": "adds initial immutable planner state container",
+        "ui": "none (no UI coupling yet)",
+        "testing": "adds smoke tests for model import/instantiation"
+      },
+      "required_evidence_before_edit": [
+        "research/rc600_claim_validation.json",
+        "research/rc600_dev_convergence_audit.json",
+        "research/rc600_execution_plan.json"
+      ],
+      "definition_of_done": [
+        "Core package exists with typed root objects and no domain semantics guessed.",
+        "No UI files import planner internals directly except through explicit interfaces."
+      ],
+      "do_not_attempt_yet": ["routing matrix logic", "assign invariants", "ctl mode semantics", "UI editors"]
+    },
+    {
+      "id": "INC-002",
+      "stage": "Stage 1",
+      "name": "ROUTING model + state actions",
+      "objective": "Implement typed routing structures for Track and Input/Rhythm matrices with destination groups.",
+      "likely_files": [
+        "src/planner_core/routing/schema.py",
+        "src/planner_core/routing/state.py",
+        "src/planner_core/routing/actions.py",
+        "tests/planner_core/test_routing_schema.py"
+      ],
+      "impact": {
+        "schema": "adds routing_track and routing_input_rhythm models",
+        "state": "adds routing update actions and selectors",
+        "ui": "none or read-only debug view only",
+        "testing": "fixture-free structural tests (required keys, allowed members)"
+      },
+      "required_evidence_before_edit": [
+        "official docs references listed in research/rc600_claim_validation.json for ROUTING-APP-001/002/003",
+        "research/sources/rc600_rc0xml_validation_excerpt.xml lines covering ROUTING",
+        "repo conventions in docs/rc600/model_boundaries.md"
+      ],
+      "definition_of_done": [
+        "Routing schema captures Track-vs-Input/Rhythm split and destination groups MAIN/SUB1/SUB2/PHONES.",
+        "Model validation rejects unknown destination/member keys."
+      ],
+      "do_not_attempt_yet": ["phones visibility UI logic", "sync/export serialization", "setlist UX"]
+    },
+    {
+      "id": "INC-003",
+      "stage": "Stage 1",
+      "name": "TRACK Bounce In/input-source model",
+      "objective": "Add per-track input-source set + bounce_enabled into TrackPlan state.",
+      "likely_files": [
+        "src/planner_core/track/schema.py",
+        "src/planner_core/track/state.py",
+        "tests/planner_core/test_track_input_sources.py"
+      ],
+      "impact": {
+        "schema": "adds TrackInputSourceSet and TrackPlan bounce fields",
+        "state": "adds track source edit actions",
+        "ui": "none or read-only summary panel",
+        "testing": "source-set persistence and empty-source warning checks"
+      },
+      "required_evidence_before_edit": [
+        "TRACK-APP-002 evidence in research/rc600_claim_validation.json",
+        "XML excerpt lines covering Bounce In source members",
+        "official docs references for Bounce In behavior"
+      ],
+      "definition_of_done": [
+        "All seven validated source members are represented and test-covered.",
+        "No canonical bit-packing assumptions are hardcoded into schema."
+      ],
+      "do_not_attempt_yet": ["cross-memory optimization", "auto-routing inference", "upload/sync protocol"]
+    },
+    {
+      "id": "INC-004",
+      "stage": "Stage 1",
+      "name": "ASSIGN bank typed model",
+      "objective": "Implement AssignBank with 16 typed AssignSlot entries and lightweight invariants.",
+      "likely_files": [
+        "src/planner_core/assign/schema.py",
+        "src/planner_core/assign/state.py",
+        "src/planner_core/assign/validators.py",
+        "tests/planner_core/test_assign_bank.py"
+      ],
+      "impact": {
+        "schema": "adds x16 slot schema and required assign fields",
+        "state": "adds slot-level edit actions",
+        "ui": "none",
+        "testing": "slot count, required fields, and value-range checks"
+      },
+      "required_evidence_before_edit": [
+        "ASSIGN-APP-001/002 evidence in research/rc600_claim_validation.json",
+        "XML excerpt lines covering ASSIGN1..16",
+        "official docs ASSIGN field definitions"
+      ],
+      "definition_of_done": [
+        "AssignBank enforces exactly 16 slots.",
+        "Each slot supports switch/source/mode/act range/target range fields with validation errors surfaced."
+      ],
+      "do_not_attempt_yet": ["target semantic expansion beyond validated fields", "bulk UI editing", "cross-device mapping"]
+    },
+    {
+      "id": "INC-005",
+      "stage": "Stage 1",
+      "name": "CTL FUNC control-plan model",
+      "objective": "Add mode-indexed pedal maps and ext/exp control maps into ControlPlan.",
+      "likely_files": [
+        "src/planner_core/ctl/schema.py",
+        "src/planner_core/ctl/state.py",
+        "src/planner_core/ctl/compatibility.py",
+        "tests/planner_core/test_ctl_plan.py"
+      ],
+      "impact": {
+        "schema": "adds pedal_modes[1..3][1..9], ext_ctrl[1..4], expression[1..2]",
+        "state": "adds control assignment actions",
+        "ui": "none",
+        "testing": "coverage tests for all pedal modes and ext/exp entries"
+      },
+      "required_evidence_before_edit": [
+        "CTL-APP-001/002 validated evidence in research/rc600_claim_validation.json",
+        "guardrail note CTL-APP-003",
+        "XML excerpt lines for ICTL/ECTL blocks"
+      ],
+      "definition_of_done": [
+        "ControlPlan supports validated field shape without promoting CTL-APP-003 into semantics.",
+        "Compatibility metadata stored separately from semantic fields."
+      ],
+      "do_not_attempt_yet": ["advanced macro behavior inference", "auto-mode remapping UX"]
+    },
+    {
+      "id": "INC-006",
+      "stage": "Stage 2",
+      "name": "Fixture pack for baseline/default memories",
+      "objective": "Create controlled fixture corpus for baseline memory structures and default comparisons.",
+      "likely_files": [
+        "tests/fixtures/rc600/baseline/*.json",
+        "tests/fixtures/rc600/default_memory/*.json",
+        "tests/planner_core/test_fixture_loading.py"
+      ],
+      "impact": {
+        "schema": "none",
+        "state": "fixture hydration support",
+        "ui": "none",
+        "testing": "fixture integrity and schema conformance tests"
+      },
+      "required_evidence_before_edit": [
+        "validated claims in research/rc600_claim_validation.json",
+        "XML excerpt for representative structures",
+        "official docs for baseline-safe defaults"
+      ],
+      "definition_of_done": [
+        "At least 3 baseline/default fixture memories load and validate.",
+        "Fixture files are documented with provenance notes."
+      ],
+      "do_not_attempt_yet": ["broad random fixture generation", "sync/export implementation"]
+    },
+    {
+      "id": "INC-007",
+      "stage": "Stage 2",
+      "name": "Memory diff tooling",
+      "objective": "Implement deterministic memory diff output across routing/track/assign/ctl domains.",
+      "likely_files": [
+        "src/planner_core/diff/memory_diff.py",
+        "src/planner_core/diff/render.py",
+        "tests/planner_core/test_memory_diff.py"
+      ],
+      "impact": {
+        "schema": "none",
+        "state": "adds snapshot/diff helpers",
+        "ui": "enables later summary panel",
+        "testing": "controlled-change comparison tests"
+      },
+      "required_evidence_before_edit": [
+        "domain schemas from INC-002..INC-005",
+        "execution plan diff requirements in research/rc600_execution_plan.json"
+      ],
+      "definition_of_done": [
+        "Diff output stable across repeated runs.",
+        "Controlled fixture deltas produce expected structured changes."
+      ],
+      "do_not_attempt_yet": ["visual diff UI", "merge/conflict auto-resolution"]
+    },
+    {
+      "id": "INC-008",
+      "stage": "Stage 2",
+      "name": "Validation report aggregation",
+      "objective": "Aggregate per-domain validation findings into one planner confidence report.",
+      "likely_files": [
+        "src/planner_core/validation/report.py",
+        "tests/planner_core/test_validation_report.py",
+        "docs/rc600/validation_report_format.md"
+      ],
+      "impact": {
+        "schema": "none",
+        "state": "adds validation status synthesis",
+        "ui": "feeds upcoming planner validation panel",
+        "testing": "report content assertions from fixtures"
+      },
+      "required_evidence_before_edit": [
+        "claim status/guardrails from research/rc600_claim_validation.json",
+        "domain invariants from INC-002..INC-005"
+      ],
+      "definition_of_done": [
+        "Single report object includes domain pass/fail/warn and guardrail notes.",
+        "Report is serializable and snapshot-tested."
+      ],
+      "do_not_attempt_yet": ["user-facing polish", "sync risk scoring"]
+    },
+    {
+      "id": "INC-009",
+      "stage": "Stage 3",
+      "name": "Planner memory overview UI",
+      "objective": "Expose memory-level planner summary driven solely by validated state and diff/validation outputs.",
+      "likely_files": [
+        "src/ui/planner/MemoryOverview.*",
+        "src/ui/planner/DomainSummaryCards.*",
+        "tests/ui/test_memory_overview.*"
+      ],
+      "impact": {
+        "schema": "none",
+        "state": "consumes MemoryPlan + validation report + diff",
+        "ui": "first planner-facing memory dashboard",
+        "testing": "UI rendering tests against fixed fixtures"
+      },
+      "required_evidence_before_edit": [
+        "completed INC-006..INC-008 outputs",
+        "benchmark usability expectations from convergence audit"
+      ],
+      "definition_of_done": [
+        "User can inspect one memory's routing/track/assign/ctl summaries and validation warnings.",
+        "No direct editing yet; read-oriented confidence surface only."
+      ],
+      "do_not_attempt_yet": ["full editing flow", "setlist management", "device sync"]
+    },
+    {
+      "id": "INC-010",
+      "stage": "Stage 3",
+      "name": "Planner editing flow (minimal vertical slice)",
+      "objective": "Enable constrained edits for one memory across the four core domains with immediate validation feedback.",
+      "likely_files": [
+        "src/ui/planner/MemoryEditorFlow.*",
+        "src/ui/planner/editors/RoutingEditor.*",
+        "src/ui/planner/editors/AssignEditor.*",
+        "src/ui/planner/editors/CtlEditor.*",
+        "src/ui/planner/editors/TrackInputEditor.*",
+        "tests/ui/test_memory_editor_flow.*"
+      ],
+      "impact": {
+        "schema": "none (consumes existing)",
+        "state": "binds edit actions to domain reducers",
+        "ui": "first end-to-end planner-capable editing slice",
+        "testing": "integration tests with controlled change comparisons"
+      },
+      "required_evidence_before_edit": [
+        "domain models and validators complete",
+        "diff + validation report stable",
+        "defer list reviewed"
+      ],
+      "definition_of_done": [
+        "Single-memory edit flow works across all core domains.",
+        "Validation and diff are updated live and remain deterministic."
+      ],
+      "do_not_attempt_yet": ["bulk set operations", "sync/upload protocol", "advanced undo/redo architecture"]
+    }
+  ],
+  "E_explicit_defer_list": [
+    "Full pedal upload/sync protocol implementation",
+    "Any canonical claim beyond validated docs/XML evidence",
+    "Automatic semantic remapping from RC-505-labeled compatibility fields",
+    "Large UI redesign before state schema stabilization",
+    "Cross-device abstraction framework"
+  ],
+  "F_recommended_first_pr_scope": {
+    "title": "Stage 1 foundation: planner core skeleton + ROUTING typed schema",
+    "include": ["INC-001", "INC-002 (schema/state/test only, no editing UI)"],
+    "exclude": ["any UX editor", "fixture corpus expansion", "diff tooling", "assign/ctl/track models"],
+    "why": "This yields the smallest mergeable foundation that converts evidence into executable planner state while minimizing scope risk."
+  }
+}
